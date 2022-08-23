@@ -1,0 +1,56 @@
+.listaCategorias {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  justify-content: center;
+  grid-gap: .5rem
+}
+
+.container {
+  padding: 4.5rem 0 3rem;
+  background: var(--cor-2);
+}
+
+.listaCategorias li {
+  background: var(--cor-1);
+  border-radius: .2rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.listaCategorias li::before {
+  content: '';
+  background: var(--cor-5);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -1.5rem;
+  background-size: 2.1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.listaCategorias li:nth-of-type(1)::before {
+  background-color: var(--cor-3);
+  background-image: url('../../assets/c1.png');
+}
+
+.listaCategorias li:nth-of-type(2)::before {
+  background-color: var(--cor-5);
+  background-image: url('../../assets/c2.png');
+}
+
+.listaCategorias li:nth-of-type(3)::before {
+  background-color: var(--cor-6);
+  background-image: url('../../assets/c3.png');
+}
+
+.listaCategorias li:nth-of-type(4)::before {
+  background-color: var(--cor-4);
+  background-image: url('../../assets/c4.png');
+}

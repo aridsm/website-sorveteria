@@ -1,0 +1,15 @@
+.vemAi {
+  background: var(--cor-2);
+  border-radius: .2rem;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.vemAi>* {
+  border: 1px solid red
+}
+
+.img {
+  margin: 0 -3rem
+}

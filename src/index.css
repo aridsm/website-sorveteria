@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Noto+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --cor-1: #5A2B80;
+  --cor-2: #4B1F6D;
+  --cor-3: #BC7BEF;
+  --cor-4: #F5F5F5;
+  --cor-5: #FBEE7C;
+  --cor-6: #53D6CE;
+  --cor-7: #797024;
+  --cor-8: #1c5753;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background: var(--cor-1);
+  color: var(--cor-4);
+  font-size: 14px;
+}
+
+h1,
+h2 {
+  font-family: 'Fredoka';
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a,
+button,
+input {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+input,
+button {
+  border: none;
+  outline: 0
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto
+}
+
+.btn-amarelo {
+  background: var(--cor-5);
+  color: var(--cor-7);
+  padding: .8rem 1.2rem;
+  border-radius: .2rem;
 }

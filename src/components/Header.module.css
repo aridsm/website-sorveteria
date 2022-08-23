@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+}
+
+.itensMenu {
+  display: flex;
+}
+
+.itensMenu a {
+  padding: 0 1rem;
+}
+
+.logo {
+  padding-right: 1rem;
+  font-size: 1.3rem;
+  font-family: 'Fredoka';
+  line-height: 1.3rem;
+  font-weight: 600;
+}
