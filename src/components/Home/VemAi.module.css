@@ -8,6 +8,18 @@
   align-items: center;
 }
 
+.vemAi::before {
+  content: '';
+  background: var(--cor-3);
+  position: absolute;
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  display: block;
+  z-index: -1;
+  filter: blur(150px)
+}
+
 .txt {
   margin-left: 2rem
 }
