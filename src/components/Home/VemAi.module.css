@@ -4,12 +4,72 @@
   margin: 2rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  align-items: center;
 }
 
-.vemAi>* {
-  border: 1px solid red
+.txt {
+  margin-left: 2rem
 }
 
 .img {
-  margin: 0 -3rem
+  margin: 0 -2rem;
+}
+
+.img img {
+  position: relative;
+  width: 420px;
+  margin-top: -6rem;
+}
+
+.titulo {
+  font-size: 3rem;
+  margin-bottom: .5rem;
+}
+
+.sabores {
+  margin-top: auto;
+}
+
+.sabores h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+.saboresLista {
+  display: flex;
+  flex-direction: column;
+  margin-right: -1rem;
+  margin-top: 1rem;
+}
+
+.saboresLista li {
+  border-top-left-radius: .2rem;
+  border-bottom-left-radius: .2rem;
+  padding: .8rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.saboresLista li+li {
+  margin-top: .5rem;
+}
+
+.saboresLista li:nth-of-type(1) {
+  margin-left: 2rem;
+  background: var(--cor-3);
+  color: var(--cor-1);
+}
+
+.saboresLista li:nth-of-type(2) {
+  margin-left: 3rem;
+  background: var(--cor-5);
+  color: var(--cor-7);
+}
+
+.saboresLista li:nth-of-type(3) {
+  margin-left: 4rem;
+  background: var(--cor-6);
+  color: var(--cor-8);
 }
