@@ -73,4 +73,9 @@ ul {
   color: var(--cor-7);
   padding: .8rem 1.2rem;
   border-radius: .2rem;
+  transition: .2s;
+}
+
+.btn-amarelo:hover {
+  transform: scale(1.1);
 }
