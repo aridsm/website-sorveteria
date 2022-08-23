@@ -1,0 +1,48 @@
+.footer {
+  background: var(--cor-2);
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem 0
+}
+
+.titulosMenu {
+  font-family: 'Fredoka';
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navMenuFooter ul {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem
+}
+
+.madeBy {
+  background: var(--cor-5);
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--cor-7)
+}
+
+.contato {
+  font-style: normal;
+}
+
+.contato li+li {
+  margin-top: 1rem;
+}
+
+.redesSociais svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: var(--cor-3)
+}
+
+.redesSociais a+a {
+  margin-left: .8rem;
+}
