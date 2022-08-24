@@ -24,6 +24,19 @@ body {
   font-size: 14px;
 }
 
+body::before {
+  content: '';
+  background: #8c4cbd;
+  width: 600px;
+  height: 450px;
+  filter: blur(220px);
+  position: absolute;
+  display: block;
+  z-index: -1;
+  top: -250px;
+  left: calc(50% - 300px)
+}
+
 h1,
 h2 {
   font-family: 'Fredoka';
@@ -78,4 +91,9 @@ ul {
 
 .btn-amarelo:hover {
   transform: scale(1.1);
+}
+
+.titulo-rotas {
+  text-align: center;
+  padding: 5rem 0
 }

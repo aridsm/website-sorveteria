@@ -97,13 +97,3 @@
 .descricao {
   margin-top: .5rem;
 }
-
-.detalhe {
-  background: #8c4cbd;
-  width: 600px;
-  height: 450px;
-  filter: blur(220px);
-  position: absolute;
-  z-index: -1;
-  top: -300px
-}

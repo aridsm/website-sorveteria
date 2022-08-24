@@ -1,0 +1,45 @@
+.wrapSlider {
+  position: relative;
+}
+
+.wrapSlider:hover button {
+  opacity: 1;
+}
+
+.wrapSlider button {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--cor-3);
+  top: calc(50% - 1.5rem);
+  opacity: 0;
+  transition: .2s;
+}
+
+.btnAnt {
+  left: -1.5rem
+}
+
+.btnDep {
+  right: -1.5rem
+}
+
+.sliderContainer {
+  margin: 3rem 0;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider li {
+  background: var(--cor-2);
+  height: 17rem;
+  min-width: calc((100% - 2rem)/5);
+}
+
+.slider li+li {
+  margin-left: .5rem;
+}
