@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('../../assets/enf2.svg'), url('../../assets/enf3.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right;
+  background-size: 20rem;
 }
 
 .caracts {

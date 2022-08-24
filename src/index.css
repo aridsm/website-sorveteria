@@ -22,19 +22,23 @@ body {
   background: var(--cor-1);
   color: var(--cor-4);
   font-size: 14px;
+  background-image: url('./assets/enf.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 20rem;
 }
 
 body::before {
   content: '';
   background: #8c4cbd;
   width: 600px;
-  height: 450px;
-  filter: blur(220px);
+  height: 350px;
+  filter: blur(150px);
   position: absolute;
   display: block;
   z-index: -1;
-  top: -250px;
-  left: calc(50% - 300px)
+  top: -150px;
+  left: calc(50% - 300px);
 }
 
 h1,
@@ -49,7 +53,8 @@ h2 {
 
 a,
 button,
-input {
+input,
+textarea {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -61,9 +66,11 @@ a {
 }
 
 input,
-button {
+button,
+textarea {
   border: none;
-  outline: 0
+  outline: 0;
+  resize: none;
 }
 
 button {
@@ -91,9 +98,4 @@ ul {
 
 .btn-amarelo:hover {
   transform: scale(1.1);
-}
-
-.titulo-rotas {
-  text-align: center;
-  padding: 5rem 0
 }

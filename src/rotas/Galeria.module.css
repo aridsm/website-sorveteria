@@ -1,0 +1,12 @@
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-gap: .5rem
+}
+
+.galeria li button {
+  width: 100%;
+  height: 100%;
+  background: var(--cor-2);
+}

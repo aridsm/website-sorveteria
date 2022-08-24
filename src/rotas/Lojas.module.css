@@ -1,0 +1,41 @@
+.listaLojas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listaLojas li h2 {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.listaLojas li h2::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.listaLojas li:nth-of-type(1) h2::before {
+  background: var(--cor-3);
+}
+
+.listaLojas li:nth-of-type(2) h2::before {
+  background: var(--cor-5);
+}
+
+.listaLojas li:nth-of-type(3) h2::before {
+  background: var(--cor-6);
+}
+
+.listaLojas li span {
+  display: block;
+}
+
+.listaLojas li span+span {
+  margin-top: .5rem;
+}

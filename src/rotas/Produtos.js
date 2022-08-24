@@ -1,15 +1,11 @@
 import React from 'react'
+import LayoutRotas from '../components/Utility/LayoutRotas';
 import Slider from '../components/Utility/Slider';
 import classes from './Produtos.module.css'
 
 const Produtos = () => {
   return (
-    <main className='container'>
-
-      <div className='titulo-rotas'>
-        <h1>O que voce encontra aqui!</h1>
-        <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-      </div>
+    <LayoutRotas titulo='O que voce encontra aqui!' descricao='Lorem ipsum dolor sit amet lorem ipsum dolor sit amet'>
 
       <div className={classes.produtos}>
         <section>
@@ -32,7 +28,7 @@ const Produtos = () => {
           <Slider />
         </section>
       </div>
-    </main>
+    </LayoutRotas>
   )
 }
 
