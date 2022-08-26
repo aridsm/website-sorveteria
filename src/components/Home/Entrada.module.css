@@ -101,3 +101,35 @@
 .descricao {
   margin-top: .5rem;
 }
+
+.detalhe {
+  position: absolute;
+}
+
+.detalhe:nth-of-type(1){
+  width: 10px;
+  height: 10px;
+  color: var(--cor-6);
+  top: 30%;
+  left: 12%;
+}
+
+.detalhe:nth-of-type(2) svg{
+  width: 35px;
+  fill: var(--cor-6);
+  height: 35px;
+}
+.detalhe:nth-of-type(2) {
+  bottom: 40%;
+  right: 15%
+}
+
+.detalhe:nth-of-type(3) svg{
+  width: 40px;
+  fill: var(--cor-3);
+  height: 40px;
+}
+.detalhe:nth-of-type(3) {
+  bottom: 25%;
+  left: 20%
+}

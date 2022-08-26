@@ -1,10 +1,12 @@
 import React from 'react'
 import ImgSorvete from '../../assets/bolasorvete.png';
 import classes from './Caracteristicas.module.css'
+import {ReactComponent as SvgStar} from '../../assets/star.svg'
 
 const Caracteristicas = () => {
   return (
     <section className={`container ${classes.container}`}>
+      <div className={classes.detalhe}><SvgStar/></div>
       <div className={classes.img}>
         <img src={ImgSorvete} alt="bola de sorvete" />
       </div>

@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .img img {
@@ -61,4 +62,13 @@
   content: '3.';
   background: var(--cor-6);
   color: var(--cor-8);
+}
+
+.detalhe {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  color: var(--cor-3);
+  left: 10%;
+  top: 20%
 }
