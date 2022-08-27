@@ -24,7 +24,7 @@ const Contato = () => {
         <button type='submit' className={`btn-amarelo ${classes.btnEnviar}`}>Enviar mensagem</button>
       </form>
 
-      <address>
+      <address className={classes.address}>
         <ul>
           <li>Email: contato@contato.com</li>
           <li>Telefone: +00 12 12345-1234</li>

@@ -3,6 +3,7 @@ import classes from './Slider.module.css'
 import {ReactComponent as IconArrowRight} from '../../assets/arrow-right-short.svg'
 import {ReactComponent as IconArrowLeft} from '../../assets/arrow-left-short.svg'
 import PropTypes from 'prop-types'
+import produtos from '../../produtos/produtos'
 
 const Slider = ({items, colorsBtn}) => {
 
@@ -85,7 +86,6 @@ const debounce = useCallback((func, wait, immediate) => {
 
   } 
 
-  const DUMMY_ITEMS = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6', 'item7']
 
   return (
     <div className={classes.wrapSlider}>
@@ -93,8 +93,9 @@ const debounce = useCallback((func, wait, immediate) => {
       <button className={classes.btnDep} onClick={nextSlideHandler} style={colorsBtn}><IconArrowRight/></button>
       <div className={classes.sliderContainer}>
         <ul className={classes.slider} ref={slideRef}>
-          {DUMMY_ITEMS.map(item => <li style={{minWidth:`${itemWidth}px`}} key={item}>
-            <div>{item}</div>
+          {items.map(item =>
+            <li style={{minWidth:`${itemWidth}px`}} key={item.nome}>
+            <img src={require(`../../assets/img-produtos/${item.img}.webp`)} alt={item.nome}/>
             </li>)}
         </ul>
       </div>
@@ -114,7 +115,8 @@ Slider.defaultProps = {
   colorsBtn: {
     backgroundColor: '#BC7BEF',
     color: '#4B1F6D'
-  }
+  },
+  
+  items: produtos.sorvetes
 }
-
 export default Slider

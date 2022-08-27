@@ -1,7 +1,8 @@
 import React from 'react'
 import LayoutRotas from '../components/Utility/LayoutRotas';
 import Slider from '../components/Utility/Slider';
-import classes from './Produtos.module.css'
+import classes from './Produtos.module.css';
+import produtos from '../produtos/produtos';
 
 const Produtos = () => {
   return (
@@ -10,22 +11,22 @@ const Produtos = () => {
       <div className={classes.produtos}>
         <section>
           <h2>Açais</h2>
-          <Slider />
+          <Slider  items={produtos.acais}/>
         </section>
 
         <section>
           <h2>Picolés</h2>
-          <Slider colorsBtn={{backgroundColor: '#FBEE7C', color: '#5f581d'}}/>
+          <Slider colorsBtn={{backgroundColor: '#FBEE7C', color: '#5f581d'}} items={produtos.picoles}/>
         </section>
 
         <section>
           <h2>Sorvetes</h2>
-          <Slider colorsBtn={{backgroundColor: '#53D6CE', color: '#1c5753'}}/>
+          <Slider colorsBtn={{backgroundColor: '#53D6CE', color: '#1c5753'}} items={produtos.sorvetes}/>
         </section>
 
         <section>
           <h2>Especiais</h2>
-          <Slider colorsBtn={{backgroundColor: '#F5F5F5', color: 'grey'}}/>
+          <Slider colorsBtn={{backgroundColor: '#F5F5F5', color: 'grey'}} items={produtos.especiais}/>
         </section>
       </div>
     </LayoutRotas>

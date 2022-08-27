@@ -1,16 +1,19 @@
+import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Contato from "./rotas/Contato";
-import Galeria from "./rotas/Galeria";
-import Home from "./rotas/Home";
-import Lojas from "./rotas/Lojas";
-import Produtos from "./rotas/Produtos"
+import Loading from "./components/Utility/Loading";
+const Home = lazy(() => import("./rotas/Home"))
+const Produtos = lazy(() => import("./rotas/Produtos"))
+const Lojas = lazy(() => import("./rotas/Lojas"))
+const Galeria = lazy(() => import("./rotas/Galeria"))
+const Contato = lazy(() => import("./rotas/Contato"))
 
 function App() {
   return (
     <>
       <Header />
+      <Suspense fallback={<Loading/>}>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/produtos' element={<Produtos />} />
@@ -18,6 +21,7 @@ function App() {
         <Route path='/galeria' element={<Galeria />} />
         <Route path='/contato' element={<Contato />} />
       </Routes>
+      </Suspense>
       <Footer />
     </>
   )
