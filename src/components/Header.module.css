@@ -18,6 +18,12 @@
 .itensMenu a {
   margin: 0 1rem;
   border-bottom: 1px solid transparent;
+  transition: .2s;
+
+}
+
+.itensMenu a:hover {
+  color: var(--cor-3);
 
 }
 

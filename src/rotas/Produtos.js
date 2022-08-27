@@ -15,17 +15,17 @@ const Produtos = () => {
 
         <section>
           <h2>Picolés</h2>
-          <Slider />
+          <Slider colorsBtn={{backgroundColor: '#FBEE7C', color: '#5f581d'}}/>
         </section>
 
         <section>
           <h2>Sorvetes</h2>
-          <Slider />
+          <Slider colorsBtn={{backgroundColor: '#53D6CE', color: '#1c5753'}}/>
         </section>
 
         <section>
           <h2>Especiais</h2>
-          <Slider />
+          <Slider colorsBtn={{backgroundColor: '#F5F5F5', color: 'grey'}}/>
         </section>
       </div>
     </LayoutRotas>

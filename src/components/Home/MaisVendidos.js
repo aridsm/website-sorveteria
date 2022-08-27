@@ -8,7 +8,7 @@ const MaisVendidos = () => {
     <section className={classes.container}>
       <div className='container'>
         <h2>Mais vendidos</h2>
-        <Slider />
+        <Slider/>
         <Link to="/produtos" className='btn-amarelo'>Confira todos os produtos</Link>
       </div>
     </section>
