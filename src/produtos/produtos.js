@@ -62,6 +62,24 @@ const produtos = {
             sabores: [
                 'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
             ]
+        },
+        {
+            nome: 'lorem',
+            id: 'sorv8',
+            img: 'sorv8',
+            descricao: 'lorem ipsum lorem ipsum',
+            sabores: [
+                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+            ]
+        },
+        {
+            nome: 'lorem',
+            id: 'sorv9',
+            img: 'sorv9',
+            descricao: 'lorem ipsum lorem ipsum',
+            sabores: [
+                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+            ]
         }
     ],
     picoles: [
@@ -96,6 +114,24 @@ const produtos = {
             nome: 'lorem',
             id: 'pi4',
             img: 'pi4',
+            descricao: 'lorem ipsum lorem ipsum',
+            sabores: [
+                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+            ]
+        },
+        {
+            nome: 'lorem',
+            id: 'pi5',
+            img: 'pi5',
+            descricao: 'lorem ipsum lorem ipsum',
+            sabores: [
+                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+            ]
+        },
+        {
+            nome: 'lorem',
+            id: 'pi6',
+            img: 'pi6',
             descricao: 'lorem ipsum lorem ipsum',
             sabores: [
                 'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
@@ -147,7 +183,34 @@ const produtos = {
             sabores: [
                 'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
             ]
-        }  
+        },
+        {
+            nome: 'lorem',
+            id: 'esp6',
+            img: 'esp6',
+            descricao: 'lorem ipsum lorem ipsum',
+            sabores: [
+                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+            ]
+        },
+        {
+            nome: 'lorem',
+            id: 'esp7',
+            img: 'esp7',
+            descricao: 'lorem ipsum lorem ipsum',
+            sabores: [
+                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+            ]
+        },
+        {
+            nome: 'lorem',
+            id: 'esp8',
+            img: 'esp8',
+            descricao: 'lorem ipsum lorem ipsum',
+            sabores: [
+                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+            ]
+        } 
     ],
     acais: [
         {

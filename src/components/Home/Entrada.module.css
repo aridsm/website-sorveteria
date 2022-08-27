@@ -9,7 +9,7 @@
   background-image: url('../../assets/enf2.svg'), url('../../assets/enf3.svg');
   background-repeat: no-repeat;
   background-position: bottom left, bottom right;
-  background-size: 20rem;
+  background-size: 18rem;
 }
 
 .caracts {
@@ -96,6 +96,12 @@
   transition: .2s;
 }
 
+.funcionamento span:nth-of-type(2) {
+  border-left: 1px solid var(--cor-1);
+  padding-left: .5rem;
+  margin-left: .5rem;
+}
+
 .funcionamento span:hover {
   color: var(--cor-4)
 }
@@ -137,4 +143,45 @@
 .detalhe:nth-of-type(3) {
   bottom: 25%;
   left: 20%
+}
+
+@media (max-width: 1000px) {
+  .entrada {
+    background-size: 12rem;
+  }
+  
+.caracts {
+  grid-gap: .3rem;
+  grid-template-columns: repeat(3, 120px);
+}
+
+.caracts li {
+  padding: .6rem
+}
+
+}
+
+@media (max-width: 730px) {
+  .entrada {
+    background-image: none;
+  }
+  .principal h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .funcionamento span:nth-of-type(2) {
+    padding-left: 0;
+    margin-left: auto;
+    border-left: none;
+  }
+
+  .funcionamento span {
+  display: table;
+  width: auto;
+  margin: 0 auto;
+}
+
 }

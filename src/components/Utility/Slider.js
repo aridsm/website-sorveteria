@@ -3,11 +3,10 @@ import classes from './Slider.module.css'
 import {ReactComponent as IconArrowRight} from '../../assets/arrow-right-short.svg'
 import {ReactComponent as IconArrowLeft} from '../../assets/arrow-left-short.svg'
 import PropTypes from 'prop-types'
-import produtos from '../../produtos/produtos'
 
 const Slider = ({items, colorsBtn}) => {
 
-  const totalItens = 7;
+  const totalItens = items.length;
   const [itensShown, setItensShown] = useState(5);
   const [currentIndex, setCurrentIndex] = useState(0);
   const slideRef = useRef();
@@ -83,15 +82,17 @@ const debounce = useCallback((func, wait, immediate) => {
   const previousSlideHandler = () => {
     if(currentIndex === 0) return;
     setCurrentIndex(state => state - 1)
-
   } 
 
+  const canSlide = totalItens <= itensShown
 
   return (
     <div className={classes.wrapSlider}>
-      <button className={classes.btnAnt} onClick={previousSlideHandler} style={colorsBtn}><IconArrowLeft/></button>
-      <button className={classes.btnDep} onClick={nextSlideHandler} style={colorsBtn}><IconArrowRight/></button>
-      <div className={classes.sliderContainer}>
+      {!canSlide && <>
+        <button className={classes.btnAnt} onClick={previousSlideHandler} style={colorsBtn}><IconArrowLeft/></button>
+        <button className={classes.btnDep} onClick={nextSlideHandler} style={colorsBtn}><IconArrowRight/></button>
+      </>}
+    <div className={classes.sliderContainer}>
         <ul className={classes.slider} ref={slideRef}>
           {items.map(item =>
             <li style={{minWidth:`${itemWidth}px`}} key={item.nome}>
@@ -115,8 +116,6 @@ Slider.defaultProps = {
   colorsBtn: {
     backgroundColor: '#BC7BEF',
     color: '#4B1F6D'
-  },
-  
-  items: produtos.sorvetes
+  }
 }
 export default Slider

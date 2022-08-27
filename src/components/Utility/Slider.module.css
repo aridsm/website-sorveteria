@@ -52,3 +52,18 @@ height: 30px;
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 360px) {
+  .slider li {
+    height: 20rem;
+  }
+  
+.wrapSlider button {
+display: none;
+}
+.sliderContainer {
+  overflow: auto;
+  padding: .5rem 0
+}
+
+}

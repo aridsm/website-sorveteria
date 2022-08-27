@@ -11,11 +11,11 @@ const Entrada = () => {
       <div className={classes.detalhe}><SvgStar/></div>
       <div className={classes.detalhe}><SvgStar/></div>
       <div className={classes.principal}>
-        <p className={classes.funcionamento}><span>Segunda a sexta - das 15h as 21h</span> / <span>Sábado e domingo - 15h as 23h</span> </p>
+        <p className={classes.funcionamento}><span>Segunda a sexta - das 15h as 21h</span><span>Sábado e domingo - 15h as 23h</span> </p>
         <h1>Lorem <span>i</span><span>p</span><span>s</span><span>u</span><span>m</span> <br /> dolor sit amet</h1>
         <p className={classes.descricao}>All the Lorem Ipsum generators on the <br />
           Internet tend to repeat</p>
-        <Link to='/lojas'>Encontre a loja mais perto de voce <IconArrow /></Link>
+        <Link to='/lojas'>Encontre a loja mais perto de você <IconArrow /></Link>
       </div>
       <ul className={classes.caracts}>
         <li>

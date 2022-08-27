@@ -54,3 +54,10 @@
   background-color: var(--cor-4);
   background-image: url('../../assets/c4.png');
 }
+
+@media (max-width: 730px) {
+  .listaCategorias {
+    grid-template-columns: repeat(2, 120px);
+    grid-gap: 2rem;
+  }
+}

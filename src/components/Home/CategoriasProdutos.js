@@ -6,7 +6,7 @@ const CategoriasProdutos = () => {
     <section className={classes.container}>
       <div className='container'>
         <ul className={classes.listaCategorias}>
-          <li>Açai</li>
+          <li>Açaí</li>
           <li>Picolé</li>
           <li>Sorvete</li>
           <li>Especiais</li>

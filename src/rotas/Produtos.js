@@ -6,13 +6,9 @@ import produtos from '../produtos/produtos';
 
 const Produtos = () => {
   return (
-    <LayoutRotas titulo='O que voce encontra aqui!' descricao='Lorem ipsum dolor sit amet lorem ipsum dolor sit amet'>
+    <LayoutRotas titulo='O que você encontra aqui!' descricao='Lorem ipsum dolor sit amet lorem ipsum dolor sit amet'>
 
       <div className={classes.produtos}>
-        <section>
-          <h2>Açais</h2>
-          <Slider  items={produtos.acais}/>
-        </section>
 
         <section>
           <h2>Picolés</h2>
@@ -27,6 +23,11 @@ const Produtos = () => {
         <section>
           <h2>Especiais</h2>
           <Slider colorsBtn={{backgroundColor: '#F5F5F5', color: 'grey'}} items={produtos.especiais}/>
+        </section>
+
+        <section>
+          <h2>Açaís</h2>
+          <Slider  items={produtos.acais}/>
         </section>
       </div>
     </LayoutRotas>

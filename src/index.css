@@ -25,7 +25,7 @@ body {
   background-image: url('./assets/enf.svg');
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 20rem;
+  background-size: 18rem;
 }
 
 body::before {
@@ -98,4 +98,19 @@ ul {
 
 .btn-amarelo:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-size: 12rem;
+  }
+  
+}
+
+
+@media (max-width: 550px) {
+  body {
+    text-align: center;
+  }
+  
 }

@@ -19,7 +19,7 @@ const Contato = () => {
         </div>
         <div className={`${classes.inputField} ${classes.inputFieldMensagem}`}>
           <label htmlFor='mensagem'>Sua mensagem</label>
-          <textarea name='mensagem' id='mensagem' cols='30' placeholder='Ex: Ola. Gostaria de saber sobre...' ></textarea>
+          <textarea name='mensagem' id='mensagem' cols='30' placeholder='Ex: Olá. Gostaria de saber sobre...' ></textarea>
         </div>
         <button type='submit' className={`btn-amarelo ${classes.btnEnviar}`}>Enviar mensagem</button>
       </form>
