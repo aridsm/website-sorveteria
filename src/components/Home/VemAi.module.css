@@ -8,8 +8,10 @@
   margin: 2rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
   position: relative;
   align-items: center;
+  padding: 1rem
 }
 
 .vemAi::before {
@@ -29,12 +31,14 @@
 }
 
 .img {
-  margin: 0 -2rem;
+  margin: 0 -5rem;
+  
 }
 
 .img img {
   position: relative;
-  width: 420px;
+  max-width: 450px;
+  width: 100%;
   margin-top: -6rem;
 }
 
@@ -88,4 +92,85 @@
   margin-left: 4rem;
   background: var(--cor-6);
   color: var(--cor-8);
+}
+
+@media (max-width:800px) {
+  .vemAi {
+    grid-template-columns:auto;
+    text-align: center;
+    grid-gap: 0;
+    padding: 3rem
+  }
+  .img {
+    grid-row: 1;
+  }
+
+  .img img {
+    max-width: 350px;
+  }
+  
+.txt {
+  margin-left: 0;
+  margin-bottom: 2rem;
+}
+
+.saboresLista {
+ flex-direction: row;
+ text-align: center;
+}
+
+.saboresLista li {
+  border-radius: .2rem;
+  flex: 1;
+  text-align: center;
+}
+
+.saboresLista li+li {
+  margin-top: 0;
+  margin-left: .5rem;
+}
+.saboresLista li:nth-of-type(1) {
+  margin-left: .5rem;
+}
+
+.saboresLista li:nth-of-type(2) {
+  margin-left: .5rem;
+}
+
+.saboresLista li:nth-of-type(3) {
+  margin-left: .5rem;
+}
+}
+
+@media (max-width:550px) {
+  .sabores h3 {
+    font-size: 13px;
+    margin-left: 0;
+  }
+  .saboresLista li {
+    font-size: 13px;
+    margin: 0 auto;
+    padding: .5rem 2rem;
+  }
+
+  .saboresLista li+li {
+    margin-top: .5rem;
+    margin-left: 0;
+  }
+  .saboresLista {
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem auto 0 auto;
+  }
+  .saboresLista li:nth-of-type(1) {
+    margin-left: auto;
+  }
+  
+  .saboresLista li:nth-of-type(2) {
+    margin-left: auto;
+  }
+  
+  .saboresLista li:nth-of-type(3) {
+    margin-left: auto;
+  }
 }

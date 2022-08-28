@@ -1,0 +1,48 @@
+.backdrop {
+    z-index: 2;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, .5);
+    backdrop-filter: blur(2px);
+}
+
+.modalContainer {
+    position: fixed;
+    max-width: 600px;
+    width: 100%;
+    padding: 0 1rem;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 3;
+}
+
+.modalContent {
+    background: var(--cor-1);
+    border-radius: .2rem;
+    box-shadow: 0 0 30px 0 rgba(0,0,0, .2 );
+    padding: 1rem;
+    transform: translateY(-1rem);
+    animation: modal .2s ease forwards;
+}
+
+.btnClose {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background: var(--cor-5);
+    color: var(--cor-7);
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 3;
+}
+
+@keyframes modal {
+    to {
+        transform: translateY(0);
+    }
+}

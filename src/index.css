@@ -100,6 +100,22 @@ ul {
   transform: scale(1.1);
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:  var(--cor-4);
+}
+
 @media (max-width: 1000px) {
   body {
     background-size: 12rem;
@@ -111,6 +127,8 @@ ul {
 @media (max-width: 550px) {
   body {
     text-align: center;
+    font-size: 13px;
+    background-image: none;
   }
   
 }

@@ -12,22 +12,22 @@ const Produtos = () => {
 
         <section>
           <h2>Picolés</h2>
-          <Slider colorsBtn={{backgroundColor: '#FBEE7C', color: '#5f581d'}} items={produtos.picoles}/>
+          <Slider items={produtos.picoles}/>
         </section>
 
         <section>
           <h2>Sorvetes</h2>
-          <Slider colorsBtn={{backgroundColor: '#53D6CE', color: '#1c5753'}} items={produtos.sorvetes}/>
+          <Slider colorsBtn={{backgroundColor: '#FBEE7C', color: '#5f581d'}} items={produtos.sorvetes}/>
         </section>
 
         <section>
           <h2>Especiais</h2>
-          <Slider colorsBtn={{backgroundColor: '#F5F5F5', color: 'grey'}} items={produtos.especiais}/>
+          <Slider   colorsBtn={{backgroundColor: '#53D6CE', color: '#1c5753'}} items={produtos.especiais}/>
         </section>
 
         <section>
           <h2>Açaís</h2>
-          <Slider  items={produtos.acais}/>
+          <Slider items={produtos.acais} colorsBtn={{backgroundColor: '#F5F5F5', color: 'grey'}}/>
         </section>
       </div>
     </LayoutRotas>

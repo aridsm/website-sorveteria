@@ -83,7 +83,7 @@
 
 .funcionamento {
   color: var(--cor-3);
-  border: 1px solid rgb(145, 45, 202);
+  border: 1px solid var(--cor-3);
   padding: .3rem .6rem;
   border-radius: 2rem;
   margin-bottom: 1.2rem;
@@ -183,5 +183,18 @@
   width: auto;
   margin: 0 auto;
 }
-
+.principal h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+.funcionamento {
+  font-size: .7rem;
+}
+.caracts {
+  grid-gap: .3rem;
+  grid-template-columns: auto;
+}
+.detalhe {
+  display: none;
+}
 }
