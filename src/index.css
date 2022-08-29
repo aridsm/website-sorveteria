@@ -7,9 +7,9 @@
 }
 
 :root {
-  --cor-1: #5A2B80;
-  --cor-2: #4B1F6D;
-  --cor-3: #BC7BEF;
+  --cor-1: #502B80;
+  --cor-2: #411E70;
+  --cor-3: #9063CA;
   --cor-4: #F5F5F5;
   --cor-5: #FBEE7C;
   --cor-6: #53D6CE;
@@ -22,24 +22,12 @@ body {
   background: var(--cor-1);
   color: var(--cor-4);
   font-size: 14px;
-  background-image: url('./assets/enf.svg');
-  background-repeat: no-repeat;
+  background-image: url('./assets/pattern.svg'), url('./assets/enf.svg');
   background-position: top right;
-  background-size: 18rem;
+  background-repeat:repeat, no-repeat;
+  background-size: auto, 20rem;
 }
 
-body::before {
-  content: '';
-  background: #8c4cbd;
-  width: 600px;
-  height: 350px;
-  filter: blur(150px);
-  position: absolute;
-  display: block;
-  z-index: -1;
-  top: -150px;
-  left: calc(50% - 300px);
-}
 
 h1,
 h2 {
@@ -121,6 +109,13 @@ ul {
     background-size: 12rem;
   }
   
+body::before {
+  width: 300px;
+  height: 300px;
+  filter: blur(130px);
+  top: -80px;
+  left: calc(50% - 150px);
+}
 }
 
 

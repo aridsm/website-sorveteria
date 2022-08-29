@@ -1,5 +1,5 @@
 .container {
-  padding: 2rem 0;
+  padding: 2rem 0 4rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,11 +7,12 @@
 }
 
 .img img {
-  max-width: 350px;
+  max-width: 330px;
+  width: 100%;
 }
 
 .listaCaracteristicas {
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 
 .listaCaracteristicas li {
@@ -21,6 +22,7 @@
   background: var(--cor-2);
   margin: auto;
   position: relative;
+  width: max-content;
 }
 
 .listaCaracteristicas li+li {
@@ -28,7 +30,7 @@
 }
 
 .listaCaracteristicas li:nth-of-type(2) {
-  left: 3rem
+  margin-left: 3rem;
 }
 
 .listaCaracteristicas li::before {
@@ -72,3 +74,22 @@
   left: 10%;
   top: 20%
 }
+
+@media (max-width: 830px){
+  .detalhe {
+  display: none;
+  }
+}
+
+@media (max-width: 600px){
+  .img {
+    display: none;
+  }
+  .listaCaracteristicas li {
+   text-align: left;
+    max-width: 190px;
+    padding: 1rem 1rem 1rem 1.8rem;
+  }
+  .listaCaracteristicas {
+    margin-left: 0;
+  }}

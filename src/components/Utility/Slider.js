@@ -96,7 +96,9 @@ const debounce = useCallback((func, wait, immediate) => {
         <ul className={classes.slider} ref={slideRef}>
           {items.map(item =>
             <li style={{minWidth:`${itemWidth}px`}} key={item.nome}>
-            <img src={require(`../../assets/img-produtos/${item.img}.webp`)} alt={item.nome}/>
+              <button className={classes.btnSlideImg}>
+                <img src={require(`../../assets/img-produtos/${item.img}.webp`)} alt={item.nome}/>
+              </button>
             </li>)}
         </ul>
       </div>

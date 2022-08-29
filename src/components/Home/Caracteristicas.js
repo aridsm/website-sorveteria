@@ -5,7 +5,8 @@ import {ReactComponent as SvgStar} from '../../assets/star.svg'
 
 const Caracteristicas = () => {
   return (
-    <section className={`container ${classes.container}`}>
+    <div className='container'>
+    <section className={classes.container}>
       <div className={classes.detalhe}><SvgStar/></div>
       <div className={classes.img}>
         <img src={ImgSorvete} alt="bola de sorvete" />
@@ -16,6 +17,7 @@ const Caracteristicas = () => {
         <li>Lorem ipsum dolor sit amet</li>
       </ul>
     </section>
+    </div>
   )
 }
 

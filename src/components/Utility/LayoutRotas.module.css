@@ -4,5 +4,6 @@
 }
 
 .main {
-  padding: 4rem 0 6rem 0
+  padding: 4rem 0 6rem 0;
+  min-height: calc(100vh - 4rem);
 }

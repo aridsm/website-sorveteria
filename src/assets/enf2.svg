@@ -1,5 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="400" height="250" version="1.1" viewBox="0 0 105.83 66.146" xmlns="http://www.w3.org/2000/svg">
- <path transform="translate(-.14174 .24214)" d="m106.36 71.003c-7.357-2.1378-15.261-23.367-25.07-26.36-9.8094-2.9929-27.137 7.9206-35.918.92402-5.3329-4.2489-3.4065-28.689-15.26-33.82-11.853-5.1307-15.786 7.5604-32.169 11.816l1.6776 47.686z" clip-path="url(#a)" fill="#7c42a9"/>
- <path transform="translate(-.14174 .24214)" d="m-18.029 25.403s9.6465-.19636 15.974-1.8399c16.383-4.2556 20.316-16.947 32.169-11.816 11.853 5.1307 9.9266 29.571 15.26 33.82 8.7816 6.9965 26.109-3.9169 35.918-.92402 9.8094 2.9929 12.568 22.084 25.07 26.36" clip-path="url(#b)" fill="none" stroke="#fbee7c" stroke-width="5.8208"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="400"
+   height="250"
+   version="1.1"
+   viewBox="0 0 105.83 66.146"
+   id="svg6"
+   sodipodi:docname="enf2.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.525"
+     inkscape:cx="-190.47619"
+     inkscape:cy="-87.619048"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6"
+     inkscape:lockguides="true" />
+  <path
+     d="m -31.777917,33.708652 c 0,0 9.6465,-0.19636 15.974,-1.8399 16.38299987,-4.2556 20.3159999,-16.947 32.169,-11.816 11.853,5.1307 9.9266,29.571 15.26,33.82 8.7816,6.9965 26.109,-3.9169 35.918,-0.92402 9.8094,2.9929 12.568,22.084 25.07,26.36"
+     clip-path="url(#b)"
+     fill="none"
+     stroke="#fbee7c"
+     stroke-width="5.8208"
+     id="path4"
+     style="stroke:#9063ca;stroke-width:1.32292;stroke-dasharray:none;stroke-opacity:1" />
 </svg>

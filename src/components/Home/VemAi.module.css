@@ -173,4 +173,9 @@
   .saboresLista li:nth-of-type(3) {
     margin-left: auto;
   }
+  .vemAi::before {
+    width: 200px;
+    height: 100%;
+    filter: blur(160px);
+  }
 }
