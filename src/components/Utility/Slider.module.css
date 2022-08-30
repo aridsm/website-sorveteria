@@ -44,13 +44,13 @@ height: 30px;
 }
 
 .slider li {
-  height: 15rem;
   padding: 0 4px;
 }
 .btnSlideImg {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  height: 15rem;
 }
 
 .btnSlideImg img:hover {
@@ -144,17 +144,12 @@ transform: translateY(-3rem);
 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 359px) {
   .slider li {
     height: 20rem;
   }
   
-.wrapSlider > button {
-display: none;
+.btnSlideImg {
+  height: 20rem;
 }
-.sliderContainer {
-  overflow: auto;
-  padding: .5rem 0
-}
-
 }

@@ -53,7 +53,7 @@ const debounce = useCallback((func, wait, immediate) => {
 
       const reverseOrderMediaQueries = [...mediaQuerySizes].reverse()
 
-      const windowMatch = reverseOrderMediaQueries.find(mediaQuery => mediaQuery.windowSize > window.innerWidth);  
+      const windowMatch = reverseOrderMediaQueries.find(mediaQuery => mediaQuery.windowSize >= window.innerWidth);  
 
       if (windowMatch) {
         setItensShown(windowMatch.itensToShow)
