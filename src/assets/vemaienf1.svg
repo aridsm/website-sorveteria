@@ -11,12 +11,33 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.4849242"
+     inkscape:cx="150.17601"
+     inkscape:cy="149.50258"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
   <path
-     d="m 167.83233,25.523084 c 0,0 -9.5269,1.527033 -15.5667,4.028889 -15.63807,6.477928 -17.78019,19.590953 -30.22834,16.146503 C 109.58918,42.254323 108.12096,17.782224 102.25174,14.310709 92.587832,8.5943637 76.934114,21.796721 66.805721,20.187537 56.676929,18.578388 51.307556,0.05138567 38.334734,-2.4566096"
+     d="m 168.36687,21.781301 c 0,0 -9.5269,1.527033 -15.5667,4.028889 C 137.1621,32.288118 135.01998,45.401143 122.57183,41.956693 110.12372,38.51254 108.6555,14.040441 102.78628,10.568926 93.122372,4.8525809 77.468654,18.054938 67.340261,16.445754 57.211469,14.836605 51.842096,-3.6903971 38.869274,-6.1983924"
      clip-path="url(#b)"
      fill="none"
      stroke="#fbee7c"
      stroke-width="5.8"
-     id="path4" />
+     id="path4"
+     style="stroke-width:1.32292;stroke-dasharray:none" />
 </svg>

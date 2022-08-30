@@ -7,7 +7,7 @@ const VemAi = () => {
     <div className='container'>
     <section className={classes.vemAi}>
       <div className={classes.txt}>
-        <h2 className={classes.titulo}>Vem aí</h2>
+        <h2 className={classes.titulo}>Vem aí!</h2>
         <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
       </div>
       <div className={classes.img}>

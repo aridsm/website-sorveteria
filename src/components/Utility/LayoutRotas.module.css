@@ -7,3 +7,16 @@
   padding: 4rem 0 6rem 0;
   min-height: calc(100vh - 4rem);
 }
+
+.main::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: var(--cor-3);
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  right: calc(50% - 150px);
+  z-index: -1;
+  filter: blur(150px)
+}

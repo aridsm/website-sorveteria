@@ -29,13 +29,13 @@
   content: '';
   display: block;
   position: absolute;
-  background: rgba(144, 99, 202, 0.6);
-  width: 400px;
-  height: 400px;
-  top: 2rem;
-  left: 2rem;
+  background: var(--cor-3);
+  width: 300px;
+  height: 300px;
+  top: 5rem;
+  right: 20%;
   z-index: -1;
-  filter: blur(150px)
+  filter: blur(180px)
 }
 .caracts {
   margin-top: auto;
@@ -75,7 +75,7 @@
 .principal h1 {
   font-size: 4.2rem;
   line-height: 4.2rem;
-  text-shadow: 6px 6px 5px rgba(65, 30, 112, 0.5);
+  text-shadow: 4px 4px 0px rgba(65, 30, 112, .5);
 }
 
 .principal h1 span:nth-of-type(1),
@@ -119,6 +119,8 @@
   color: var(--cor-3);
   transition: .2s;
   margin-bottom: .5rem;
+  position: relative;
+  z-index: 2;
 }
 
 .funcionamento:hover {

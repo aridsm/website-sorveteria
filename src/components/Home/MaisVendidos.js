@@ -9,7 +9,8 @@ const MaisVendidos = () => {
     <section className={classes.container}>
       <div className='container'>
         <h2>Mais vendidos</h2>
-        <Slider items={produtos.picoles}/>
+        <p>Os mais pedidos da semana!</p>
+        <Slider items={produtos.maisVendidos}/>
         <Link to="/produtos" className='btn-amarelo'>Confira todos os produtos</Link>
       </div>
     </section>

@@ -3,7 +3,6 @@
   background-image: url('../../assets/vemaienf1.svg'), url('../../assets/vemaienf2.svg');
   background-position: top right, bottom left;
   background-repeat: no-repeat;
-  background-size: 12rem;
   border-radius: .2rem;
   margin: 2rem auto;
   display: grid;
@@ -79,7 +78,7 @@
 .saboresLista li:nth-of-type(1) {
   margin-left: 2rem;
   background: var(--cor-3);
-  color: var(--cor-1);
+  color: var(--cor-2);
 }
 
 .saboresLista li:nth-of-type(2) {

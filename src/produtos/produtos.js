@@ -1,243 +1,288 @@
 const produtos = {
     sorvetes: [
         {
-            nome: 'lorem',
+            nome: 'Duis luctus',
             id: 'sorv1',
             img: 'sorv1',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Duis tristique erat vel sollicitudin auctor. Cras tortor nunc, varius sed enim sit amet.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Menta', 'Creme', 'Baunilha', 'Chocolate', 'Castanhas'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Suspendisse sed',
             id: 'sorv2',
             img: 'sorv2',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Amora', 'Framboesa', 'Mirtilo', 'Cereja'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Nullam tristique',
             id: 'sorv3',
             img: 'sorv3',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Duis tristique erat vel sollicitudin auctor. Cras tortor nunc, varius sed enim sit amet.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Chocolate', 'Baunilha', 'Misto'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Maecenas dignissim',
             id: 'sorv4',
             img: 'sorv4',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Chiclete', 'Tutti-fruti', 'Jujuba'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Aliquam',
             id: 'sorv5',
             img: 'sorv5',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Sed mattis neque purus, ac mollis urna rhoncus non. Proin faucibus interdum nisi, quis auctor.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Pistache', 'Amendoa', 'Castanha de caju', 'Amendoim', 'Nozes'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Donec',
             id: 'sorv6',
             img: 'sorv6',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Chocolate', 'Biscoito', 'Pave', 'Creme', 'Flocos'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Quisque',
             id: 'sorv7',
             img: 'sorv7',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Duis tristique erat vel sollicitudin auctor. Cras tortor nunc, varius sed enim sit amet.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Chocolate', 'Morango'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Phasellus',
             id: 'sorv8',
             img: 'sorv8',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Sed mattis neque purus, ac mollis urna rhoncus non. Proin faucibus interdum nisi, quis auctor.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Baunilha', 'Biscoito', 'Cereja', 'Chocolate'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Sed mattis',
             id: 'sorv9',
             img: 'sorv9',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Duis tristique erat vel sollicitudin auctor. Cras tortor nunc, varius sed enim sit amet.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Menta', 'Chocolate'
             ]
         }
     ],
     picoles: [
         {
-            nome: 'lorem',
+            nome: 'Maecenas dignissim',
             id: 'pi1',
             img: 'pi1',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Morango', 'Amora', 'Uva', 'Abacaxi'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Suspendisse semper',
             id: 'pi2',
             img: 'pi2',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Duis tristique erat vel sollicitudin auctor. Cras tortor nunc, varius sed enim sit amet.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Chocolate', 'Chocolate branco', 'Morango'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Sed mattis',
             id: 'pi3',
             img: 'pi3',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Sed mattis neque purus, ac mollis urna rhoncus non. Proin faucibus interdum nisi, quis auctor.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+               'Amora e abacaxi', 'Manga e pera', 'Goiaba e banana', 'Ameixa e caqui'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Pellentesque',
             id: 'pi4',
             img: 'pi4',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Biscoito'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Aliquam accumsan',
             id: 'pi5',
             img: 'pi5',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Duis tristique erat vel sollicitudin auctor. Cras tortor nunc, varius sed enim sit amet.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Laranja', 'Limao', 'Acerola', 'Tangerina', 'Abacaxi', 'Graviola'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Donec',
             id: 'pi6',
             img: 'pi6',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Sed mattis neque purus, ac mollis urna rhoncus non. Proin faucibus interdum nisi, quis auctor.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Balas fini'
             ]
         }  
     ],
     especiais: [
         {
-            nome: 'lorem',
+            nome: 'Duis tristique',
             id: 'esp1',
             img: 'esp1',
-            descricao: 'lorem ipsum lorem ipsum',
-            sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
-            ]
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
         },
         {
-            nome: 'lorem',
+            nome: 'Maecenas',
             id: 'esp2',
             img: 'esp2',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Duis tristique erat vel sollicitudin auctor. Cras tortor nunc, varius sed enim sit amet.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Morango', 'Banana'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Duis laoreet ',
             id: 'esp3',
             img: 'esp3',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Sed mattis neque purus, ac mollis urna rhoncus non. Proin faucibus interdum nisi, quis auctor.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Chocolate', 'Nozes', 'Pessego'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Pellentesque',
             id: 'esp4',
             img: 'esp4',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Biscoito', 'Morango', 'Pave'
             ]
         },
         {
-            nome: 'lorem',
+            nome: 'Ullamcorper',
             id: 'esp5',
             img: 'esp5',
-            descricao: 'lorem ipsum lorem ipsum',
-            sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
-            ]
+            descricao: 'Duis tristique erat vel sollicitudin auctor. Cras tortor nunc, varius sed enim sit amet.',
+           
         },
         {
-            nome: 'lorem',
+            nome: 'Nullam tristique',
             id: 'esp6',
             img: 'esp6',
-            descricao: 'lorem ipsum lorem ipsum',
-            sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
-            ]
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
+           
         },
         {
-            nome: 'lorem',
+            nome: 'Morbi sodales',
             id: 'esp7',
             img: 'esp7',
-            descricao: 'lorem ipsum lorem ipsum',
-            sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
-            ]
+            descricao: 'Sed mattis neque purus, ac mollis urna rhoncus non. Proin faucibus interdum nisi, quis auctor.',
+           
         },
         {
-            nome: 'lorem',
+            nome: 'Pharetra lectus.',
             id: 'esp8',
             img: 'esp8',
-            descricao: 'lorem ipsum lorem ipsum',
-            sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
-            ]
+            descricao: 'Duis tristique erat vel sollicitudin auctor. Cras tortor nunc, varius sed enim sit amet.',
         } 
     ],
     acais: [
         {
-            nome: 'lorem',
+            nome: 'Fringilla',
             id: 'acai1',
             img: 'acai1',
-            descricao: 'lorem ipsum lorem ipsum',
-            sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
-            ]
+            descricao: 'Sed mattis neque purus, ac mollis urna rhoncus non. Proin faucibus interdum nisi, quis auctor.',
+           
         },
         {
-            nome: 'lorem',
+            nome: 'Donec enim eros',
             id: 'acai2',
             img: 'acai2',
-            descricao: 'lorem ipsum lorem ipsum',
+            descricao: 'Duis tristique erat vel sollicitudin auctor. Cras tortor nunc, varius sed enim sit amet.',
+           
+        },
+        {
+            nome: 'Quisque id sodales',
+            id: 'acai3',
+            img: 'acai3',
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
+           
+        }
+    ],
+    maisVendidos: [
+        {
+            nome: 'Suspendisse sed',
+            id: 'sorv2',
+            img: 'sorv2',
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Amora', 'Framboesa', 'Mirtilo', 'Cereja'
             ]
         },
         {
-            nome: 'lorem',
-            id: 'acai3',
-            img: 'acai3',
-            descricao: 'lorem ipsum lorem ipsum',
+            nome: 'Fringilla',
+            id: 'acai1',
+            img: 'acai1',
+            descricao: 'Sed mattis neque purus, ac mollis urna rhoncus non. Proin faucibus interdum nisi, quis auctor.',
+           
+        },
+        {
+            nome: 'Maecenas dignissim',
+            id: 'pi1',
+            img: 'pi1',
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
             sabores: [
-                'Morango', 'Creme', 'Baunilha', 'Chocolate', 'Uva', 'Laranja', 'Flocos'
+                'Morango', 'Amora', 'Uva', 'Abacaxi'
+            ]
+        },
+        {
+            nome: 'Suspendisse semper',
+            id: 'pi2',
+            img: 'pi2',
+            descricao: 'Duis tristique erat vel sollicitudin auctor. Cras tortor nunc, varius sed enim sit amet.',
+            sabores: [
+                'Chocolate', 'Chocolate branco', 'Morango'
+            ]
+        },
+        {
+            nome: 'Duis laoreet ',
+            id: 'esp3',
+            img: 'esp3',
+            descricao: 'Sed mattis neque purus, ac mollis urna rhoncus non. Proin faucibus interdum nisi, quis auctor.',
+            sabores: [
+                'Chocolate', 'Nozes', 'Pessego'
+            ]
+        },
+        {
+            nome: 'Pellentesque',
+            id: 'esp4',
+            img: 'esp4',
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
+            sabores: [
+                'Biscoito', 'Morango', 'Pave'
+            ]
+        },
+        {
+            nome: 'Donec',
+            id: 'sorv6',
+            img: 'sorv6',
+            descricao: 'Donec viverra odio eu ante consequat, id eleifend ipsum tristique. Nullam condimentum sed urna at tincidunt.',
+            sabores: [
+                'Chocolate', 'Biscoito', 'Pave', 'Creme', 'Flocos'
             ]
         }
     ]
