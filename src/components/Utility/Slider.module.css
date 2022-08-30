@@ -123,6 +123,20 @@ transform: translateY(-3rem);
   transition: .3s;
 }
 
+@media (max-width: 1100px) {
+  .wrapSlider > button {
+    opacity: 1;
+  }
+  .btnAnt {
+    left: -.5rem
+  }
+  
+  .btnDep {
+    right: -.5rem
+  }
+}
+
+
 @media (max-width: 800px) {
   .modal {
     flex-direction: column;

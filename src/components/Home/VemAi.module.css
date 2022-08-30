@@ -31,7 +31,6 @@
 
 .img {
   margin: 0 -5rem;
-  
 }
 
 .img img {
@@ -93,6 +92,7 @@
   color: var(--cor-8);
 }
 
+
 @media (max-width:800px) {
   .vemAi {
     grid-template-columns:auto;
@@ -102,6 +102,7 @@
   }
   .img {
     grid-row: 1;
+    margin: 0;
   }
 
   .img img {

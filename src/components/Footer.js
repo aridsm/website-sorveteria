@@ -19,7 +19,7 @@ const Footer = () => {
             <li><Link to='/contato'>Contato</Link></li>
           </ul>
         </nav>
-        <div>
+        <div className={classes.iconsMade}>
           Icons made by...
         </div>
         <address className={classes.contato}>

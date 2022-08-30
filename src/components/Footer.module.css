@@ -6,7 +6,8 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 2rem 0
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .titulosMenu {
@@ -45,4 +46,20 @@
 
 .redesSociais a+a {
   margin-left: .8rem;
+}
+
+@media (max-width: 650px) {
+  
+.container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contato, .iconsMade {
+  margin-top: 2rem;
+  width: 100%;
+  padding-top: 2rem;
+  border-top: 1px solid var(--cor-1);
+}
 }

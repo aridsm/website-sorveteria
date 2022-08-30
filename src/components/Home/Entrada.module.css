@@ -13,6 +13,7 @@
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
+  border: 1px solid greenyellow;
 }
 .img {
   position: absolute;
@@ -126,3 +127,52 @@
 .funcionamento:hover {
   color: var(--cor-4)
 }
+
+
+@media (max-width: 1100px) {
+.img img {
+    width: 500px;
+}
+.principal h1 {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
+
+.funcionamento {
+  max-width: 300px;
+}
+
+}
+
+@media (max-width: 880px) {
+
+  .img {
+    right: 0;
+    bottom: 0rem;
+    z-index: -1;
+    border:1px solid red
+  }
+  
+  .img img {
+    width: 500px;
+  }
+  .caracts {
+    position: relative;
+    right: initial;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    grid-template-columns: repeat(3, 110px);
+  }
+
+  .caracts li {
+    display: grid;
+    place-items: center;
+    padding: .7rem
+  }
+  .entrada {
+   flex-direction: column;
+   justify-content: center;
+   border:1px solid cyan
+  }
+  }
