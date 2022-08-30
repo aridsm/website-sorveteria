@@ -1,7 +1,7 @@
 .form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem
+  grid-gap: 2rem
 }
 
 .inputField label {
@@ -11,6 +11,7 @@
 
 .inputField {
   width: 100%;
+  position: relative;
 }
 
 .inputField input,
@@ -43,6 +44,18 @@
   box-shadow: 0 0 0 1px var(--cor-3);
 }
 
+.inputField.error input, .inputField.error textarea{
+  box-shadow: 0 0 0 1px rgb(245, 92, 46);
+}
+.inputField p {
+  bottom: -1.4rem;
+  position: absolute;
+
+}
+.inputField.error > p {
+  color: rgb(248, 114, 73);
+}
+
 .btnEnviar {
   justify-self: end;
   grid-column: 2;
@@ -64,4 +77,23 @@
 
 .redesSociais a + a {
   margin-left: 1rem;
+}
+
+@media (max-width: 800px) {
+  .form {
+    grid-template-columns: auto;
+    margin-bottom: 3rem;
+  }
+  .inputFieldMensagem {
+    grid-column: 1;
+    grid-row:3
+  }
+  .btnEnviar {
+    grid-column: 1;
+  }
+}
+@media (max-width: 550px) {
+  .form {
+    margin-bottom: 3rem;
+  }
 }

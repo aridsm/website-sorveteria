@@ -39,3 +39,17 @@
 .listaLojas li span+span {
   margin-top: .5rem;
 }
+
+@media (max-width: 850px) {
+  .listaLojas {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .listaLojas li + li {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--cor-3)
+  }
+}

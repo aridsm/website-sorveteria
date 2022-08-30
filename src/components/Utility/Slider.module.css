@@ -135,7 +135,7 @@ transform: translateY(-3rem);
     height: 20rem;
   }
   
-.wrapSlider button {
+.wrapSlider > button {
 display: none;
 }
 .sliderContainer {

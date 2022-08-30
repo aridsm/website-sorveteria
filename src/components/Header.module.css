@@ -28,8 +28,7 @@
 }
 
 .itensMenu a.active{
-  color: var(--cor-3);
-  border-bottom: 1px solid var(--cor-3);
+  border-bottom: 1px solid currentColor;
 }
 
 .logo {

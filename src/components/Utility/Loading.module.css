@@ -3,12 +3,23 @@
     height: 100%;
     display: grid;
     place-items: center;
+
 }
 
 .loading {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 3px solid red;
-    border-top-color: aqua;
+    border: 3px solid var(--cor-3);
+    border-top-color: var(--cor-5);
+    animation: rotate .5s ease infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
