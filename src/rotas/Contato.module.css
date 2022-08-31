@@ -84,10 +84,12 @@
 
 .modal h3 {
   font-size: 1.5rem;
+  margin-bottom: .5rem;
 }
 
 .modal button {
-  min-width: 200px
+  min-width: 200px;
+  margin-top: 2rem;
 }
 
 @media (max-width: 800px) {

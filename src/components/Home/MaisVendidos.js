@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import produtos from '../../produtos/produtos';
 import Slider from '../Utility/Slider';
 import classes from './MaisVendidos.module.css';
-
 const MaisVendidos = () => {
+
+  
   return (
     <section className={classes.container}>
       <div className='container'>

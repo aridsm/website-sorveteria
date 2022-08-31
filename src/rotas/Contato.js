@@ -56,8 +56,8 @@ const Contato = () => {
     {modalShown && 
     <Modal onClose={closeModal}>
         <div className={classes.modal}>
-          <h3>Agradecemos por entrar em contato</h3>
-          <p>Dentro de 24 horas enviaremos um email resposta. Aguarde...</p>
+          <h3>Agradecemos por entrar em contato!</h3>
+          <p>Dentro de 24 horas enviaremos um email. Aguarde.</p>
           <button className='btn-amarelo' onClick={closeModal}>Ok</button>
         </div>
       </Modal>
@@ -73,12 +73,12 @@ const Contato = () => {
         <div className={`${classes.inputField} ${emailError ? classes.error : ''}`}>
           <label htmlFor='email'>Email de contato</label>
           <input type='email' value={emailValue} onChange={changeEmail} onBlur={blurEmail} name='email' id='email' placeholder='Ex: seuemail@email.com' />
-          {emailError && <p>O valor nao corresponde a um email.</p>}
+          {emailError && <p>O valor não corresponde a um email.</p>}
         </div>
         <div className={`${classes.inputField} ${classes.inputFieldMensagem} ${messageError ? classes.error : ''}`}>
           <label htmlFor='mensagem'>Sua mensagem</label>
           <textarea name='mensagem' value={messageValue} onChange={changeMessage} onBlur={blurMessage} id='mensagem' cols='30' placeholder='Ex: Olá. Gostaria de saber sobre...' ></textarea>
-          {messageError && <p>A mensagem deve possuir, ao menos, 20 caracteres.</p>}
+          {messageError && <p>A mensagem deve possuir ao menos 20 caracteres.</p>}
         </div>
         <button type='submit' className={`btn-amarelo ${classes.btnEnviar}`}>Enviar mensagem</button>
       </form>

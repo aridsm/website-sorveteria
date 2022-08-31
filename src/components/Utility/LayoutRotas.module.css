@@ -20,3 +20,18 @@
   right: calc(50% - 150px);
   filter: blur(150px)
 }
+@media (max-width: 500px) {
+  
+.main::before {
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  right: calc(50% - 100px);
+}
+.main {
+  padding: 2rem 0 6rem 0;
+}
+.tituloRotas {
+  margin-bottom: 4rem;
+}
+}

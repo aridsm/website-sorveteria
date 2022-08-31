@@ -36,11 +36,14 @@ height: 30px;
 .sliderContainer {
   margin: 3rem 0;
   overflow: hidden;
+  position: relative;
 }
 
 .slider {
   display: flex;
   transition: .2s;
+  position: relative;
+  border:1px solid red
 }
 
 .slider li {
@@ -51,6 +54,8 @@ height: 30px;
   height: 100%;
   overflow: hidden;
   height: 15rem;
+  
+  cursor: inherit;
 }
 
 .btnSlideImg img:hover {

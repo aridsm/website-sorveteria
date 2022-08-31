@@ -4,6 +4,8 @@ import {ReactComponent as IconArrowRight} from '../../assets/arrow-right-short.s
 import {ReactComponent as IconArrowLeft} from '../../assets/arrow-left-short.svg'
 import PropTypes from 'prop-types';
 import Modal from './Modal'
+import "aos/dist/aos.css"
+import AOS from 'aos'
 
 const Slider = ({items, colorsBtn}) => {
 
@@ -13,9 +15,17 @@ const Slider = ({items, colorsBtn}) => {
   const slideRef = useRef();
   const [itemWidth, setItemWidth] = useState(0);
   const [currentItemModal, setCurrentItemModal] = useState(null);
-  const [modalIsShown, setModalIsShown] = useState(false)
+  const [modalIsShown, setModalIsShown] = useState(false);
+  const dragging = useRef();
+  const startX = useRef();
 
-  
+  useEffect(() => {
+    AOS.init({
+      duration: 800
+    })
+  }, [])
+
+
   useEffect(() => {
  
     setItemWidth(slideRef.current.offsetWidth / itensShown)
@@ -23,7 +33,6 @@ const Slider = ({items, colorsBtn}) => {
     slideRef.current.style.transform = `translateX(-${currentIndex * itemWidth}px)`
 
   }, [currentIndex, itemWidth, itensShown])
-
 
 const debounce = useCallback((func, wait, immediate) => {
 	let timeout;
@@ -38,8 +47,7 @@ const debounce = useCallback((func, wait, immediate) => {
 		timeout = setTimeout(later, wait);
 		if (callNow) func.apply(context, args);
 	};
-}, [])
-
+}, []);
 
   useEffect(() => {
     const mediaQuerySizes = [
@@ -73,8 +81,37 @@ const debounce = useCallback((func, wait, immediate) => {
       window.removeEventListener('resize', changeSlideItemsToShown)
     }
   }, [debounce, itensShown])
+
+
+  const handleMouseDown = (e) => {
+    startX.current = e.clientX - e.currentTarget.getBoundingClientRect().left;
+    dragging.current = true
+  }
   
+  const handleMouseUp = (e) => {
+
+
+  }
   
+  const handleMouseMove = (e) => {
+   if (!dragging.current) return;
+   
+  e.currentTarget.style.left = `${e.clientX - startX.current}px`
+  }
+
+  useEffect(() => {
+
+    const cancelDrag = () => {
+      dragging.current = false
+    }
+
+    window.addEventListener('mouseup', cancelDrag)
+    return () => {
+      window.removeEventListener('mouseup', cancelDrag)
+    }
+  }, [])
+  
+
   const nextSlideHandler = () => {
     if(currentIndex > totalItens - itensShown - 1) return
     setCurrentIndex(state => state + 1)
@@ -121,17 +158,17 @@ const debounce = useCallback((func, wait, immediate) => {
     </div>
     </Modal>
      }
-    <div className={classes.wrapSlider}>
+    <div className={classes.wrapSlider} data-aos="fade-up">
       {!canSlide && <>
         <button className={classes.btnAnt} onClick={previousSlideHandler} style={colorsBtn}><IconArrowLeft/></button>
         <button className={classes.btnDep} onClick={nextSlideHandler} style={colorsBtn}><IconArrowRight/></button>
       </>}
     <div className={classes.sliderContainer}>
-        <ul className={classes.slider} ref={slideRef}>
+        <ul className={classes.slider} ref={slideRef} onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove}>
           {items.map(item =>
             <li style={{minWidth:`${itemWidth}px`}} key={item.id}>
-              <button className={classes.btnSlideImg} onClick={() => handleOpenModal(item)}>
-                <img src={require(`../../assets/img-produtos/${item.img}.webp`)} alt={item.nome}/>
+              <button className={classes.btnSlideImg} onClick={() => handleOpenModal(item)} draggable='false'>
+                <img src={require(`../../assets/img-produtos/${item.img}.webp`)} alt={item.nome} draggable='false' />
                 <p className={classes.nomeItem}>{item.nome}</p>
               </button>
             </li>

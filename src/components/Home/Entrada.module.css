@@ -1,5 +1,5 @@
 .entrada {
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
   max-height: 700px;
   display: flex;
   align-items: center;
@@ -20,7 +20,8 @@
 .img {
   position: absolute;
   right: 20%;
-  bottom:0
+  bottom:0;
+  z-index: -1;
 }
 
 .img img {
@@ -33,12 +34,12 @@
   display: block;
   position: absolute;
   background: var(--cor-3);
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   top: 5rem;
   right: 20%;
   z-index: -1;
-  filter: blur(160px)
+  filter: blur(200px)
 }
 .caracts {
   margin-top: auto;
@@ -58,13 +59,13 @@
 }
 
 .caracts li:nth-of-type(1) {
-  background: var(--cor-3);
-  color: var(--cor-2);
+  color: var(--cor-7);
+  background: var(--cor-5);
 }
 
 .caracts li:nth-of-type(2) {
-  background: var(--cor-5);
-  color: var(--cor-7);
+  background: var(--cor-3);
+  color: var(--cor-2);
 }
 
 .caracts li:nth-of-type(3) {
@@ -78,7 +79,7 @@
 .principal h1 {
   font-size: 4.2rem;
   line-height: 4.2rem;
-  text-shadow: 4px 4px 0px rgba(65, 30, 112, .5);
+  text-shadow: 4px 4px 0px rgba(65, 30, 112, .3);
 }
 
 .principal h1 span:nth-of-type(1),
@@ -97,11 +98,12 @@
 
 .principal a {
   margin-top: 3rem;
+  border-bottom: 1px solid var(--cor-4);
   transition: .2s;
-  border-bottom: 1px solid currentColor;
 }
 
 .principal a:hover {
+  border-color: currentColor;
   color: var(--cor-3)
 }
 
@@ -205,36 +207,40 @@
       margin: 0 auto;
     }
 
-    .entrada::before {
-      content: '';
-      display: block;
-      position: absolute;
-      background: var(--cor-3);
-      width:250px;
-      height:250px;
-      top: -30%;
-      filter: blur(120px);
-      z-index: -1;
-    }
+
   }
 
   @media (max-width: 450px) {
     .principal h1 {
       font-size: 2.5rem;
       line-height: 2.5rem;
-      text-shadow: 2px 2px 0px rgba(65, 30, 112, .5);
+      text-shadow: 4px 4px 0px rgba(65, 30, 112, .1);
     }
 
     .caracts {
-      grid-template-columns: auto;
-      padding: 0 1rem
+      padding: 0 1rem;
+      grid-gap:.5rem;
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .caracts li {
-      padding: .8rem .5rem;
-      min-width: 200px;
+      padding: .5rem;
     }
     .entrada {
-      background-size: 15rem;
+      background-size: 10rem;
+      
+    }
+
+    .entrada::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: var(--cor-3);
+      width: 200px;
+      height: 200px;
+      top: -100px;
+      z-index: -1;
+      right: calc(50% - 100px);
+      filter: blur(150px)
     }
   }

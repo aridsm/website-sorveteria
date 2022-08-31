@@ -66,21 +66,6 @@
   color: var(--cor-8);
 }
 
-.detalhe {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  color: var(--cor-3);
-  left: 10%;
-  top: 20%
-}
-
-@media (max-width: 830px){
-  .detalhe {
-  display: none;
-  }
-}
-
 @media (max-width: 600px){
   .img {
     display: none;

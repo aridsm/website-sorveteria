@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ImgSorvete from '../../assets/bolasorvete.png';
 import classes from './Caracteristicas.module.css'
-import {ReactComponent as SvgStar} from '../../assets/star.svg'
+import "aos/dist/aos.css"
+import AOS from 'aos'
 
 const Caracteristicas = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800
+    })
+  }, [])
+
   return (
     <div className='container'>
     <section className={classes.container}>
-      <div className={classes.detalhe}><SvgStar/></div>
-      <div className={classes.img}>
+      <div className={classes.img}data-aos='fade-down'>
         <img src={ImgSorvete} alt="bola de sorvete" />
       </div>
-      <ul className={classes.listaCaracteristicas}>
+      <ul className={classes.listaCaracteristicas} data-aos='fade-up'>
         <li>Lorem ipsum dolor sit amet</li>
         <li>Lorem ipsum dolor sit amet</li>
         <li>Lorem ipsum dolor sit amet</li>
