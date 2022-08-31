@@ -20,7 +20,7 @@ const Footer = () => {
           </ul>
         </nav>
         <div className={classes.iconsMade}>
-          Icons made by...
+        <a href="https://www.flaticon.com/packs/ice-cream-menu-2" title="Ice Cream Menu icons">Icons created by tulpahn - Flaticon</a>
         </div>
         <address className={classes.contato}>
           <p className={classes.titulosMenu}>Contato</p>
@@ -36,7 +36,7 @@ const Footer = () => {
         </address>
       </div>
       <div className={classes.madeBy}>
-        Projeto feito por <a href='/'>Ariane Morelato</a>
+        Projeto feito por <a href='https://github.com/aridsm'>Ariane Morelato</a>
       </div>
     </footer>
   )

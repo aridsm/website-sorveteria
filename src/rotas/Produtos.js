@@ -3,11 +3,12 @@ import LayoutRotas from '../components/Utility/LayoutRotas';
 import Slider from '../components/Utility/Slider';
 import classes from './Produtos.module.css';
 import produtos from '../produtos/produtos';
+import Head from '../components/Utility/Head';
 
 const Produtos = () => {
   return (
     <LayoutRotas titulo='O que você encontra aqui!' descricao='Lorem ipsum dolor sit amet lorem ipsum dolor sit amet'>
-
+      <Head title='Produtos' description='O que temos aqui!' />
       <div className={classes.produtos}>
 
         <section>

@@ -13,11 +13,16 @@ const useInput = (handleValidation) => {
     setWasTouched(true)
  }
 
+ const handleCleanInput = () => {
+   setWasTouched(false);
+   setValue('')
+ }
+
  const valueIsValid = handleValidation(value);
 
  const error = wasTouched && !valueIsValid
 
- return {value, handleChange: handleChangeValue, handleBlur: handleBlurInput, error, valueIsValid, setValue}
+ return {value, handleChange: handleChangeValue, handleBlur: handleBlurInput, error, valueIsValid, handleCleanInput}
 
 }
 

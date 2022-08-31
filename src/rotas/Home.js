@@ -4,10 +4,12 @@ import CategoriasProdutos from '../components/Home/CategoriasProdutos'
 import Entrada from '../components/Home/Entrada'
 import MaisVendidos from '../components/Home/MaisVendidos'
 import VemAi from '../components/Home/VemAi'
+import Head from '../components/Utility/Head'
 
 const Home = () => {
   return (
     <main>
+      <Head title='Home' description='A melhor sorveteria da cidade!' />
       <Entrada />
       <CategoriasProdutos />
       <MaisVendidos />

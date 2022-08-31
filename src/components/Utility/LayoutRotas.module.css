@@ -16,7 +16,7 @@
   width: 300px;
   height: 300px;
   top: -150px;
-  right: calc(50% - 150px);
   z-index: -1;
+  right: calc(50% - 150px);
   filter: blur(150px)
 }

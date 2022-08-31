@@ -78,6 +78,17 @@
 .redesSociais a + a {
   margin-left: 1rem;
 }
+.modal {
+  text-align: center;
+}
+
+.modal h3 {
+  font-size: 1.5rem;
+}
+
+.modal button {
+  min-width: 200px
+}
 
 @media (max-width: 800px) {
   .form {

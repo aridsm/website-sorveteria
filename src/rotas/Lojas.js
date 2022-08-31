@@ -1,10 +1,12 @@
 import React from 'react';
+import Head from '../components/Utility/Head';
 import LayoutRotas from '../components/Utility/LayoutRotas';
 import classes from './Lojas.module.css'
 
 const Lojas = () => {
   return (
     <LayoutRotas titulo='Encontre a loja mais perto de você!' descricao='Lorem ipsum dolor sit amet lorem ipsum dolor sit amet'>
+      <Head title='Lojas' description='Encontre a Sorveteria mais perto da sua casa!' />
       <ul className={classes.listaLojas}>
         <li>
           <h2>Bairro Vivamus finibus</h2>

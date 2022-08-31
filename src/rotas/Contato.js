@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from './Contato.module.css'
 import { ReactComponent as InstagramIcon } from '../assets/instagram.svg'
 import { ReactComponent as FacebookIcon } from '../assets/facebook.svg'
 import { ReactComponent as WhatsappIcon } from '../assets/whatsapp.svg'
 import LayoutRotas from '../components/Utility/LayoutRotas'
 import useInput from '../hooks/useInput'
+import Head from '../components/Utility/Head';
+import Modal from '../components/Utility/Modal';
 
 const Contato = () => {
   
+  const [modalShown, setModalShown] = useState(false);
+
+  const closeModal = () => {
+    setModalShown(false)
+  }
 
   const handleEmailValidation= (value) => {
     const rgxEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -22,9 +29,9 @@ const Contato = () => {
     return value.trim().length > 20;
   }
 
-  const {value: nomeValue, handleChange: changeNome, handleBlur: blurNome, error: nomeError, valueIsValid: nomeValid, setValue: setNome} = useInput(handleNomeValidation)
-  const {value: emailValue, handleChange: changeEmail, handleBlur: blurEmail, error: emailError, valueIsValid: emailValid, setValue: setEmail} = useInput(handleEmailValidation)
-  const {value: messageValue, handleChange: changeMessage, handleBlur: blurMessage, error: messageError, valueIsValid: messageValid, setValue: setMessage} = useInput(handleMessageValidation)
+  const {value: nomeValue, handleChange: changeNome, handleBlur: blurNome, error: nomeError, valueIsValid: nomeValid, handleCleanInput: cleanNome} = useInput(handleNomeValidation)
+  const {value: emailValue, handleChange: changeEmail, handleBlur: blurEmail, error: emailError, valueIsValid: emailValid, handleCleanInput: cleanEmail} = useInput(handleEmailValidation)
+  const {value: messageValue, handleChange: changeMessage, handleBlur: blurMessage, error: messageError, valueIsValid: messageValid, handleCleanInput: cleanMessage} = useInput(handleMessageValidation)
 
 
   const submitEmail = (e) => {
@@ -32,9 +39,10 @@ const Contato = () => {
 
     if (nomeValid && emailValid && messageValid) {
 
-      setNome('')
-      setEmail('')
-      setMessage('')
+      setModalShown(true)
+      cleanNome()
+      cleanEmail()
+      cleanMessage()
       return
     }
 
@@ -44,7 +52,18 @@ const Contato = () => {
   }
 
   return (
+    <>
+    {modalShown && 
+    <Modal onClose={closeModal}>
+        <div className={classes.modal}>
+          <h3>Agradecemos por entrar em contato</h3>
+          <p>Dentro de 24 horas enviaremos um email resposta. Aguarde...</p>
+          <button className='btn-amarelo' onClick={closeModal}>Ok</button>
+        </div>
+      </Modal>
+    }
     <LayoutRotas titulo='Fale com a gente!' descricao='Lorem ipsum dolor sit amet lorem ipsum dolor sit amet'>
+      <Head title='Contato' description='Mande uma mensagem agora para a gente!' />
       <form className={classes.form} onSubmit={submitEmail}>
         <div className={`${classes.inputField} ${nomeError ? classes.error : ''}`}>
           <label htmlFor='nome'>Nome completo</label>
@@ -76,6 +95,7 @@ const Contato = () => {
         </ul>
       </address>
     </LayoutRotas>
+    </>
   )
 }
 

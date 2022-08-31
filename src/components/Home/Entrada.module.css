@@ -7,6 +7,8 @@
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 20rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .container {
   padding: 1rem;
@@ -195,11 +197,10 @@
       display: block;
       position: absolute;
       background: var(--cor-3);
-      width:300px;
-      height:300px;
-      top: calc(50% - 200px);
-      top: calc(50% - 140px);
-      filter: blur(200px);
+      width:250px;
+      height:250px;
+      top: -30%;
+      filter: blur(120px);
       z-index: -1;
     }
   }
