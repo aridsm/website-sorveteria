@@ -15,9 +15,9 @@ const Entrada = () => {
             Internet tend to repeat</p>
           <Link to='/lojas'>Encontre a loja mais perto de você <IconArrow /></Link>
         </div>
-        <div className={classes.img}>
+      </div>
+      <div className={classes.img}>
           <img src={ImgEntrada} alt='Casquinha de sorvete' />
-        </div>
       </div>
       <ul className={classes.caracts}>
         <li>

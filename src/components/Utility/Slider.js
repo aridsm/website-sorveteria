@@ -12,7 +12,7 @@ const Slider = ({items, colorsBtn}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slideRef = useRef();
   const [itemWidth, setItemWidth] = useState(0);
-  const [currentItemModal, setCurrentItemModal] = useState(items[0]);
+  const [currentItemModal, setCurrentItemModal] = useState(null);
   const [modalIsShown, setModalIsShown] = useState(false)
 
   
@@ -100,13 +100,14 @@ const debounce = useCallback((func, wait, immediate) => {
     <>
     {modalIsShown &&
     <Modal onClose={handleCloseModal}>
-      <div className={classes.modal}>
+    <div className={classes.modal}>
       <div className={classes.imgModal}>
         <img src={require(`../../assets/img-produtos/${currentItemModal.img}.webp`)} alt={currentItemModal.nome}/>
       </div>
       <div className={classes.infosModal}>
         <h3>{currentItemModal.nome}</h3>
         <p>{currentItemModal.descricao}</p>
+      </div>
         {currentItemModal.sabores && 
         <section className={classes.sabores}>
           <p>Sabores</p>
@@ -117,10 +118,7 @@ const debounce = useCallback((func, wait, immediate) => {
           </ul>
         </section>
         }
-
-      </div>
-       
-       </div>
+    </div>
     </Modal>
      }
     <div className={classes.wrapSlider}>
@@ -136,7 +134,8 @@ const debounce = useCallback((func, wait, immediate) => {
                 <img src={require(`../../assets/img-produtos/${item.img}.webp`)} alt={item.nome}/>
                 <p className={classes.nomeItem}>{item.nome}</p>
               </button>
-            </li>)}
+            </li>
+            )}
         </ul>
       </div>
     </div>

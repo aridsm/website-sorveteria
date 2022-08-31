@@ -62,7 +62,7 @@ const Contato = () => {
         </div>
       </Modal>
     }
-    <LayoutRotas titulo='Fale com a gente!' descricao='Lorem ipsum dolor sit amet lorem ipsum dolor sit amet'>
+    <LayoutRotas titulo='Fale com a gente!' descricao='Cras feugiat iaculis ligula, quis consectetur magna efficitur'>
       <Head title='Contato' description='Mande uma mensagem agora para a gente!' />
       <form className={classes.form} onSubmit={submitEmail}>
         <div className={`${classes.inputField} ${nomeError ? classes.error : ''}`}>

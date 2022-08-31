@@ -1,10 +1,9 @@
 .backdrop {
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0, .5);
-    backdrop-filter: blur(2px);
 }
 
 .modalContainer {
@@ -21,7 +20,7 @@
 .modalContent {
     background: var(--cor-1);
     border-radius: .2rem;
-    box-shadow: 0 0 30px 0 rgba(0,0,0, .2 );
+    box-shadow: 0 0 30px 0 rgba(0,0,0, .1 );
     padding: 1rem;
     transform: translateY(-1rem);
     animation: modal .2s ease forwards;
@@ -29,16 +28,16 @@
 
 .btnClose {
     border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background: var(--cor-5);
     color: var(--cor-7);
     display: grid;
     place-items: center;
     position: fixed;
-    top: 2rem;
-    right: 2rem;
-    z-index: 3;
+    top: 1rem;
+    right: 1rem;
+    z-index: 4;
 }
 
 @keyframes modal {

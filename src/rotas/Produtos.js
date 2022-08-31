@@ -7,7 +7,7 @@ import Head from '../components/Utility/Head';
 
 const Produtos = () => {
   return (
-    <LayoutRotas titulo='O que você encontra aqui!' descricao='Lorem ipsum dolor sit amet lorem ipsum dolor sit amet'>
+    <LayoutRotas titulo='O que você encontra aqui!' descricao=' Maecenas et feugiat augue. Ut sit amet nulla eu quam posuere'>
       <Head title='Produtos' description='O que temos aqui!' />
       <div className={classes.produtos}>
 

@@ -5,7 +5,7 @@ import classes from './Lojas.module.css'
 
 const Lojas = () => {
   return (
-    <LayoutRotas titulo='Encontre a loja mais perto de você!' descricao='Lorem ipsum dolor sit amet lorem ipsum dolor sit amet'>
+    <LayoutRotas titulo='Encontre a loja mais perto de você!' descricao='Mauris nec magna vulputate sem elementum lobortis'>
       <Head title='Lojas' description='Encontre a Sorveteria mais perto da sua casa!' />
       <ul className={classes.listaLojas}>
         <li>

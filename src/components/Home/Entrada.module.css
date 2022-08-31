@@ -1,14 +1,15 @@
 .entrada {
-  min-height: calc(100vh - 6rem);
-  height: 100%;
+  height: calc(100vh - 6rem);
+  max-height: 700px;
   display: flex;
   align-items: center;
   background-image: url('../../assets/enf2.svg');
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 20rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
 }
 .container {
   padding: 1rem;
@@ -37,7 +38,7 @@
   top: 5rem;
   right: 20%;
   z-index: -1;
-  filter: blur(180px)
+  filter: blur(160px)
 }
 .caracts {
   margin-top: auto;
@@ -174,6 +175,18 @@
    flex-direction: column;
    justify-content: center;
   }
+
+  .funcionamento {
+    color: #b58bec
+  }
+  }
+
+  @media (min-height: 700px) {
+
+    .img img {
+      width: 650px;
+    }
+    
   }
 
   @media (max-width: 750px) {
@@ -209,14 +222,19 @@
     .principal h1 {
       font-size: 2.5rem;
       line-height: 2.5rem;
+      text-shadow: 2px 2px 0px rgba(65, 30, 112, .5);
     }
 
     .caracts {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: auto;
       padding: 0 1rem
     }
 
     .caracts li {
-      padding: .5rem
+      padding: .8rem .5rem;
+      min-width: 200px;
+    }
+    .entrada {
+      background-size: 15rem;
     }
   }

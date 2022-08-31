@@ -111,3 +111,9 @@ ul {
   }
   
 }
+
+@media (max-width: 450px) {
+  body {
+    background-size: 16rem;
+  }
+}

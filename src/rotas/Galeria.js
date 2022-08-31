@@ -77,7 +77,7 @@ const Galeria = () => {
       </div>
     </Modal>
     }
-    <LayoutRotas titulo='Conheça nosso ambiente!' descricao='Lorem ipsum dolor sit amet lorem ipsum dolor sit amet'>
+    <LayoutRotas titulo='Conheça nosso ambiente!' descricao='Curabitur rutrum elit vel felis volutpat interdum'>
       <ul className={classes.galeria}>
         {galeria.map(imagem => 
         <li key={imagem.id}>
