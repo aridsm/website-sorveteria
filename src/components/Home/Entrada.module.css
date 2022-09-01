@@ -1,6 +1,5 @@
 .entrada {
   min-height: calc(100vh - 6rem);
-  max-height: 700px;
   display: flex;
   align-items: center;
   background-image: url('../../assets/enf2.svg');
@@ -65,7 +64,7 @@
 
 .caracts li:nth-of-type(2) {
   background: var(--cor-3);
-  color: var(--cor-2);
+  color: #340e66;
 }
 
 .caracts li:nth-of-type(3) {
@@ -185,9 +184,6 @@
 
   @media (min-height: 700px) {
 
-    .img img {
-      width: 650px;
-    }
     .entrada {
       min-height: 700px;
     }
@@ -199,7 +195,18 @@
       position: relative;
      }
      .img {
-      display: none;
+      position: relative;
+      order: 3;
+      margin-bottom: -5rem;
+      right: 5%
+    }
+    .img img {
+      max-width: 100%;
+    }
+    .img::before {
+      width: 150px;
+      height: 150px;
+      filter: blur(100px)
     }
     .caracts {
       margin: 2rem auto 0 auto
