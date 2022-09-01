@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import LayoutRotas from '../components/Utility/LayoutRotas';
 import Slider from '../components/Utility/Slider';
 import classes from './Produtos.module.css';
@@ -6,6 +6,10 @@ import produtos from '../produtos/produtos';
 import Head from '../components/Utility/Head';
 
 const Produtos = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <LayoutRotas titulo='O que você encontra aqui!' descricao=' Maecenas et feugiat augue. Ut sit amet nulla eu quam posuere'>
       <Head title='Produtos' description='O que temos aqui!' />

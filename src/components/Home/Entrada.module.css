@@ -34,8 +34,8 @@
   display: block;
   position: absolute;
   background: var(--cor-3);
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   top: 5rem;
   right: 20%;
   z-index: -1;
@@ -188,7 +188,9 @@
     .img img {
       width: 650px;
     }
-    
+    .entrada {
+      min-height: 700px;
+    }
   }
 
   @media (max-width: 750px) {
@@ -207,7 +209,18 @@
       margin: 0 auto;
     }
 
-
+    .entrada::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: var(--cor-3);
+      width: 200px;
+      height: 200px;
+      top: -100px;
+      z-index: -1;
+      right: calc(50% - 100px);
+      filter: blur(150px)
+    }
   }
 
   @media (max-width: 450px) {
@@ -228,19 +241,6 @@
     }
     .entrada {
       background-size: 10rem;
-      
     }
 
-    .entrada::before {
-      content: '';
-      display: block;
-      position: absolute;
-      background: var(--cor-3);
-      width: 200px;
-      height: 200px;
-      top: -100px;
-      z-index: -1;
-      right: calc(50% - 100px);
-      filter: blur(150px)
-    }
   }

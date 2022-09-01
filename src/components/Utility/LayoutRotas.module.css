@@ -6,6 +6,10 @@
 .main {
   padding: 4rem 0 6rem 0;
   min-height: calc(100vh - 4rem);
+  background-image: url('../../assets/enf2.svg');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 20rem;
 }
 
 .main::before {
@@ -20,6 +24,8 @@
   right: calc(50% - 150px);
   filter: blur(150px)
 }
+
+
 @media (max-width: 500px) {
   
 .main::before {
@@ -34,4 +40,11 @@
 .tituloRotas {
   margin-bottom: 4rem;
 }
+}
+
+
+@media (max-width: 450px) {
+  .main {
+    background-size: 7rem;
+  }
 }

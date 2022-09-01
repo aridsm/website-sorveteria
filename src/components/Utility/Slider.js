@@ -1,11 +1,22 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { memo, useCallback, useEffect, useRef, useState } from 'react'
 import classes from './Slider.module.css'
 import {ReactComponent as IconArrowRight} from '../../assets/arrow-right-short.svg'
 import {ReactComponent as IconArrowLeft} from '../../assets/arrow-left-short.svg'
 import PropTypes from 'prop-types';
-import Modal from './Modal'
 import "aos/dist/aos.css"
 import AOS from 'aos'
+import SliderModal from './SliderModal';
+
+const ItemsSlider = memo(({itemWidth, item, openModal}) => {
+  return (
+      <li style={{minWidth:`${itemWidth}px`}}>
+        <button className={classes.btnSlideImg} onClick={() => openModal(item)} draggable='false'>
+          <img src={require(`../../assets/img-produtos/${item.img}.webp`)} alt={item.nome} draggable='false' />
+          <p className={classes.nomeItem}>{item.nome}</p>
+        </button>
+      </li>
+      )
+})
 
 const Slider = ({items, colorsBtn}) => {
 
@@ -16,21 +27,19 @@ const Slider = ({items, colorsBtn}) => {
   const [itemWidth, setItemWidth] = useState(0);
   const [currentItemModal, setCurrentItemModal] = useState(null);
   const [modalIsShown, setModalIsShown] = useState(false);
-  const dragging = useRef();
-  const startX = useRef();
 
   useEffect(() => {
     AOS.init({
-      duration: 800
+      duration: 800,
+      offset: 0
     })
   }, [])
 
-
   useEffect(() => {
  
-    setItemWidth(slideRef.current.offsetWidth / itensShown)
+    setItemWidth(slideRef.current.offsetWidth / itensShown);
 
-    slideRef.current.style.transform = `translateX(-${currentIndex * itemWidth}px)`
+    slideRef.current.style.transform = `translateX(${-(currentIndex * itemWidth)}px)`
 
   }, [currentIndex, itemWidth, itensShown])
 
@@ -83,35 +92,6 @@ const debounce = useCallback((func, wait, immediate) => {
   }, [debounce, itensShown])
 
 
-  const handleMouseDown = (e) => {
-    startX.current = e.clientX - e.currentTarget.getBoundingClientRect().left;
-    dragging.current = true
-  }
-  
-  const handleMouseUp = (e) => {
-
-
-  }
-  
-  const handleMouseMove = (e) => {
-   if (!dragging.current) return;
-   
-  e.currentTarget.style.left = `${e.clientX - startX.current}px`
-  }
-
-  useEffect(() => {
-
-    const cancelDrag = () => {
-      dragging.current = false
-    }
-
-    window.addEventListener('mouseup', cancelDrag)
-    return () => {
-      window.removeEventListener('mouseup', cancelDrag)
-    }
-  }, [])
-  
-
   const nextSlideHandler = () => {
     if(currentIndex > totalItens - itensShown - 1) return
     setCurrentIndex(state => state + 1)
@@ -122,10 +102,10 @@ const debounce = useCallback((func, wait, immediate) => {
     setCurrentIndex(state => state - 1)
   } 
 
-  const handleOpenModal = (item) => {
+  const handleOpenModal = useCallback((item) => {
     setModalIsShown(true);
     setCurrentItemModal(item)
-  }
+  }, [])
 
   const handleCloseModal = () => {
     setModalIsShown(false)
@@ -135,43 +115,16 @@ const debounce = useCallback((func, wait, immediate) => {
 
   return (
     <>
-    {modalIsShown &&
-    <Modal onClose={handleCloseModal}>
-    <div className={classes.modal}>
-      <div className={classes.imgModal}>
-        <img src={require(`../../assets/img-produtos/${currentItemModal.img}.webp`)} alt={currentItemModal.nome}/>
-      </div>
-      <div className={classes.infosModal}>
-        <h3>{currentItemModal.nome}</h3>
-        <p>{currentItemModal.descricao}</p>
-      </div>
-        {currentItemModal.sabores && 
-        <section className={classes.sabores}>
-          <p>Sabores</p>
-          <ul>
-            {currentItemModal.sabores.map(sabor =>
-              <li key={sabor}>{sabor}</li>
-              )}
-          </ul>
-        </section>
-        }
-    </div>
-    </Modal>
-     }
+    {modalIsShown && <SliderModal currentItemModal={currentItemModal} onClose={handleCloseModal}/>}
     <div className={classes.wrapSlider} data-aos="fade-up">
       {!canSlide && <>
-        <button className={classes.btnAnt} onClick={previousSlideHandler} style={colorsBtn}><IconArrowLeft/></button>
-        <button className={classes.btnDep} onClick={nextSlideHandler} style={colorsBtn}><IconArrowRight/></button>
+        <button className={classes.btnAnt} onClick={previousSlideHandler} style={colorsBtn} aria-label='item anterior'><IconArrowLeft/></button>
+        <button className={classes.btnDep} onClick={nextSlideHandler} style={colorsBtn} aria-label='item posterior'><IconArrowRight/></button>
       </>}
     <div className={classes.sliderContainer}>
-        <ul className={classes.slider} ref={slideRef} onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove}>
+        <ul className={classes.slider} ref={slideRef}>
           {items.map(item =>
-            <li style={{minWidth:`${itemWidth}px`}} key={item.id}>
-              <button className={classes.btnSlideImg} onClick={() => handleOpenModal(item)} draggable='false'>
-                <img src={require(`../../assets/img-produtos/${item.img}.webp`)} alt={item.nome} draggable='false' />
-                <p className={classes.nomeItem}>{item.nome}</p>
-              </button>
-            </li>
+            <ItemsSlider key={item.id} item={item} openModal={handleOpenModal} itemWidth={itemWidth}/>
             )}
         </ul>
       </div>

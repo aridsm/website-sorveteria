@@ -8,8 +8,8 @@
 
 :root {
   --cor-1: #582996;
-  --cor-2: #41137e;
-  --cor-3: #a46bee;
+  --cor-2: #4a178b;
+  --cor-3: #ac73f7;
   --cor-4: #F5F5F5;
   --cor-5: #f3e882;
   --cor-6: #53D6CE;
@@ -115,6 +115,6 @@ ul {
 @media (max-width: 450px) {
   body {
     background-image: url('./assets/pattern.svg');
-    background-size: 7rem;
+    background-size: 9rem;
   }
 }

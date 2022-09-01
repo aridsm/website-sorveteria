@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import classes from './Contato.module.css'
 import { ReactComponent as InstagramIcon } from '../assets/instagram.svg'
 import { ReactComponent as FacebookIcon } from '../assets/facebook.svg'
@@ -11,6 +11,10 @@ import Modal from '../components/Utility/Modal';
 const Contato = () => {
   
   const [modalShown, setModalShown] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const closeModal = () => {
     setModalShown(false)

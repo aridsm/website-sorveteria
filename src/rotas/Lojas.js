@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Head from '../components/Utility/Head';
 import LayoutRotas from '../components/Utility/LayoutRotas';
 import classes from './Lojas.module.css'
 
 const Lojas = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+
   return (
     <LayoutRotas titulo='Encontre a loja mais perto de você!' descricao='Mauris nec magna vulputate sem elementum lobortis'>
       <Head title='Lojas' description='Encontre a Sorveteria mais perto da sua casa!' />

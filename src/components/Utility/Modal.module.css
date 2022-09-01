@@ -40,6 +40,11 @@
     z-index: 4;
 }
 
+.btnClose svg {
+    width: 22px;
+    height: 22px;
+}
+
 @keyframes modal {
     to {
         transform: translateY(0);

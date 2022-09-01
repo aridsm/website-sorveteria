@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import LayoutRotas from '../components/Utility/LayoutRotas'
 import Modal from '../components/Utility/Modal';
 import classes from './Galeria.module.css';
@@ -55,6 +55,11 @@ const Galeria = () => {
 
   const [modalShown, setModalShown] = useState(false);
   const [currentImageShown, setCurrentImageShown] = useState()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
 
   const closeModal = () => {
     setModalShown(false)

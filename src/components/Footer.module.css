@@ -24,10 +24,9 @@
 }
 
 .madeBy {
-  background: var(--cor-5);
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   text-align: center;
-  color: var(--cor-7)
+  border-top: 1px solid var(--cor-1);
 }
 
 .contato {

@@ -144,7 +144,6 @@
 
 @media (max-width:550px) {
   .sabores h3 {
-    font-size: 13px;
     margin-left: 0;
   }
   .saboresLista li {
@@ -177,5 +176,8 @@
     width: 200px;
     height: 100%;
     filter: blur(160px);
+  }
+  .vemAi {
+background-size: 15rem;
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import classes from './Modal.module.css'
+import {ReactComponent as IconClose} from '../../assets/x.svg'
 
 const BackdropModal = ({onClose}) => {
     return (
@@ -11,7 +12,7 @@ const BackdropModal = ({onClose}) => {
 const ModalContent = ({children, onClose}) => {
     return (
         <>
-        <button className={classes.btnClose} onClick={onClose}>x</button>
+        <button className={classes.btnClose} onClick={onClose}><IconClose/></button>
         <div className={classes.modalContainer}>
             <div className={classes.modalContent}>
             {children} 

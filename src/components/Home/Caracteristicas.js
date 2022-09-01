@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import ImgSorvete from '../../assets/bolasorvete.png';
+import ImgSorvete from '../../assets/bolasorvete.webp';
 import classes from './Caracteristicas.module.css'
 import "aos/dist/aos.css"
 import AOS from 'aos'

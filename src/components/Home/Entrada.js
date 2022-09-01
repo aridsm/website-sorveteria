@@ -10,7 +10,8 @@ const Entrada = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 800
+      duration: 800,
+      offset: 0
     })
   }, [])
 
@@ -20,8 +21,7 @@ const Entrada = () => {
         <div className={classes.principal} data-aos="fade-down">
           <p className={classes.funcionamento}>Segunda a sexta - 15h as 21h / Sábado e domingo - 15h as 23h </p>
           <h1>Lorem <span>i</span><span>p</span><span>s</span><span>u</span><span>m</span> <br /> dolor sit amet</h1>
-          <p className={classes.descricao}>All the Lorem Ipsum generators on the <br />
-            Internet tend to repeat</p>
+          <p className={classes.descricao}>Nulla ultricies placerat posuere. Fusce sagittis ligula eu <br/> porttitor. Donec ultricies et felis at euismod.</p>
           <Link to='/lojas'>Encontre a loja mais perto de você <ArrowSvg/></Link>
         </div>
       </div>
