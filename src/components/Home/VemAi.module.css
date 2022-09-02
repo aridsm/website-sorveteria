@@ -2,6 +2,7 @@
   background-color: var(--cor-2);
   background-image: url('../../assets/vemaienf1.svg'), url('../../assets/vemaienf2.svg');
   background-position: top right, bottom left;
+  background-size: 20rem;
   background-repeat: no-repeat;
   border-radius: .2rem;
   margin: 2rem auto;
@@ -50,16 +51,17 @@
 }
 
 .sabores h3 {
-  font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   margin-left: 2rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0;
 }
 
 .saboresLista {
   display: flex;
   flex-direction: column;
   margin-right: -1rem;
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 .saboresLista li {
@@ -77,7 +79,7 @@
 .saboresLista li:nth-of-type(1) {
   margin-left: 2rem;
   background: var(--cor-3);
-  color: var(--cor-2);
+  color: #340e66;
 }
 
 .saboresLista li:nth-of-type(2) {

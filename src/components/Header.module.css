@@ -33,10 +33,11 @@
 
 .logo {
   padding-right: 1rem;
-  font-size: 1.3rem;
   font-family: 'Fredoka';
-  line-height: 1.3rem;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: auto;
+  font-size: 1.3rem;
+  margin-top: -4px;
 }
 
 .menuBtn {

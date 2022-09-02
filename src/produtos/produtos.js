@@ -134,7 +134,7 @@ const produtos = {
             img: 'pi6',
             descricao: 'Sed mattis neque purus, ac mollis urna rhoncus non. Proin faucibus interdum nisi, quis auctor.',
             sabores: [
-                'Balas fini'
+                'Jujuba', 'Caramelo', 'Tutti-frutti'
             ]
         }  
     ],

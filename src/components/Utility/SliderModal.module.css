@@ -4,7 +4,6 @@
     grid-template-columns: 20rem auto;
     grid-template-rows: auto 12rem;
     grid-gap: 1rem;
-    padding: 1.5rem
   }
   
   .imgModal {
@@ -24,6 +23,7 @@
   
   .infosModal {
     grid-row: 1;
+    margin-top: 1rem;
   }
   
   .infosModal h3 {

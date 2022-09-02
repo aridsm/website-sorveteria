@@ -6,47 +6,47 @@ import classes from './Galeria.module.css';
 const galeria = [
   {
     img: 'gal1.webp',
-    descricao: 'lorem',
+    descricao: 'Donec ac malesuada tortor. Suspendisse justo enim.',
     id: 'gal1'
   },
   {
     img: 'gal2.webp',
-    descricao: 'lorem',
+    descricao: 'Nunc a dapibus leo.',
     id: 'gal2'
   },
   {
     img: 'gal3.webp',
-    descricao: 'lorem',
+    descricao: 'Vestibulum tristique malesuada erat ut ultricies.',
     id: 'gal3'
   },
   {
     img: 'gal4.webp',
-    descricao: 'lorem',
+    descricao: 'In eu lacus lacinia nibh gravida commodo',
     id: 'gal4'
   },
   {
     img: 'gal5.webp',
-    descricao: 'lorem',
+    descricao: 'Proin ac sodales leo',
     id: 'gal5'
   },
   {
     img: 'gal6.webp',
-    descricao: 'lorem',
+    descricao: 'Quisque et fermentum turpis.',
     id: 'gal6'
   },
   {
     img: 'gal7.webp',
-    descricao: 'lorem',
+    descricao: 'Maecenas a lobortis urna.',
     id: 'gal7'
   },
   {
     img: 'gal8.webp',
-    descricao: 'lorem',
+    descricao: 'Aenean consequat elit ut magna fermentum posuere.',
     id: 'gal8'
   },
   {
     img: 'gal9.webp',
-    descricao: 'lorem',
+    descricao: 'Praesent efficitur sit amet felis eget vehicula.',
     id: 'gal9'
   }
 ]

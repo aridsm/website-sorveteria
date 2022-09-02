@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Poppins:wght@300&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,9 +7,9 @@
 }
 
 :root {
-  --cor-1: #582996;
-  --cor-2: #4a178b;
-  --cor-3: #ac73f7;
+  --cor-1: #5a20a5;
+  --cor-2: #490f8b;
+  --cor-3: #ac83fa;
   --cor-4: #F5F5F5;
   --cor-5: #f3e882;
   --cor-6: #53D6CE;
@@ -18,21 +18,23 @@
 }
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: var(--cor-1);
   color: var(--cor-4);
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 300;
   background-image: url('./assets/pattern.svg'), url('./assets/enf.svg');
   background-position: top right;
   background-repeat:repeat, no-repeat;
-  background-size: auto, 20rem;
+  background-size: 10rem, 20rem;
 }
 
 
 h1,
 h2, h3{
   font-family: 'Fredoka';
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 h2 {
