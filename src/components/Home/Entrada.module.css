@@ -219,6 +219,10 @@
       margin-bottom: -5rem;
       right: 5%
     }
+
+    .img img {
+      max-width: 100%;
+    }
     .img::before {
       width: 150px;
       height: 150px;
@@ -252,7 +256,9 @@
       line-height: 2.5rem;
       text-shadow: 4px 4px 0px rgba(65, 30, 112, .1);
     }
-
+    .principal br{
+      display: none;
+    }
     .caracts {
       padding: 0 1rem;
       grid-gap:.5rem;

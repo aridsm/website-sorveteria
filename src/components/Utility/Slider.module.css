@@ -87,11 +87,13 @@ transform: translateY(-3rem);
     opacity: 1;
   }
   .btnAnt {
-    left: -.5rem
+    left: -.5rem;
+    transform: translateX(0);
   }
   
   .btnDep {
-    right: -.5rem
+    right: -.5rem;
+    transform: translateX(0);
   }
 }
 
