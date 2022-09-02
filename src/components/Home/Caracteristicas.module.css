@@ -22,7 +22,7 @@
   background: var(--cor-2);
   margin: auto;
   position: relative;
-  width: max-content;
+  width: 250px;
 }
 
 .listaCaracteristicas li+li {
@@ -71,7 +71,7 @@
     display: none;
   }
   .listaCaracteristicas li {
-   text-align: left;
+    text-align: left;
     max-width: 190px;
     padding: 1rem 1rem 1rem 1.8rem;
   }

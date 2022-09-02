@@ -1,7 +1,7 @@
 .form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem
+  grid-gap: 2.5rem
 }
 
 .inputField label {
@@ -48,7 +48,7 @@
   box-shadow: 0 0 0 1px rgb(245, 92, 46);
 }
 .inputField p {
-  bottom: -1.4rem;
+  top: calc(100% + .2rem);
   position: absolute;
 
 }
@@ -63,7 +63,6 @@
 
 .address {
   font-style: normal;
-
 }
 
 .address li + li {
@@ -96,10 +95,12 @@
   .form {
     grid-template-columns: auto;
     margin-bottom: 3rem;
+    text-align: left;
   }
   .inputFieldMensagem {
     grid-column: 1;
-    grid-row:3
+    grid-row:3;
+    height: 10rem
   }
   .btnEnviar {
     grid-column: 1;

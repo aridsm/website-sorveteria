@@ -19,9 +19,9 @@ const Caracteristicas = () => {
         <img src={ImgSorvete} alt="bola de sorvete" />
       </div>
       <ul className={classes.listaCaracteristicas} data-aos='fade-up'>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet</li>
+        <li>Curabitur commodo nibh ligula.</li>
+        <li>Morbi ornare, sem sed facilisis semper.</li>
+        <li>Curabitur id metus non dui tempor pharetra. </li>
       </ul>
     </section>
     </div>

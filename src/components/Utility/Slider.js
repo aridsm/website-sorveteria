@@ -143,8 +143,8 @@ Slider.propTypes = {
 
 Slider.defaultProps = {
   colorsBtn: {
-    backgroundColor: '#ac73f7',
-    color: '#582996'
+    backgroundColor: '#5a20a5',
+    color: '#ac83fa'
   }
 }
 export default Slider

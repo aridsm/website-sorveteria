@@ -4,6 +4,7 @@
 
 .wrapSlider:hover > button {
   opacity: 1;
+  transform: translateX(0);
 }
 
 .wrapSlider > button {
@@ -26,11 +27,13 @@ height: 30px;
 }
 
 .btnAnt {
-  left: -1.5rem
+  left: -1.5rem;
+  transform: translateX(-.5rem);
 }
 
 .btnDep {
-  right: -1.5rem
+  right: -1.5rem;
+  transform: translateX(.5rem);
 }
 
 .sliderContainer {
