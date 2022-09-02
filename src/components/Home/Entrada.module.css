@@ -119,7 +119,7 @@
 
 .funcionamento {
   text-transform: uppercase;
-  color: var(--cor-3);
+  color: #b993ff;
   transition: .2s;
   margin-bottom: .5rem;
   position: relative;
