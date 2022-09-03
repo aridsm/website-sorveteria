@@ -84,7 +84,7 @@ ul {
   padding: .8rem 1.2rem;
   border-radius: .2rem;
   transition: .2s;
-  box-shadow: 0 0 30px 0 var(--cor-2);
+  box-shadow: 2px 2px 2px 0 #411177;
 }
 
 .btn-amarelo:hover {

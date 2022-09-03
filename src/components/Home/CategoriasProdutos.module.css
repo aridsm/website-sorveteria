@@ -16,6 +16,7 @@
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   text-align: center;
   position: relative;
+  box-shadow: 2px 2px 2px 0 #411177;
 }
 
 .listaCategorias li::before {
