@@ -12,6 +12,7 @@ O projeto teve como principal objetivo a prática de Design. Além disso, ao pro
 
 * Home: página inicial
 * Produtos: página com sliders dos produtos e modal
+* Lojas: endereços das "lojas"
 * Galeria: lista com imagens do "local" com modal
 * Formulário: formulário de contato com validação e modal de confirmação
 * 404: página de erro caso a rota não exista
