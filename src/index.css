@@ -7,14 +7,14 @@
 }
 
 :root {
-  --cor-1: #5a20a5;
-  --cor-2: #490f8b;
-  --cor-3: #ac83fa;
+  --cor-1: #511f92;
+  --cor-2: #451280;
+  --cor-3: #a379f1;
   --cor-4: #F5F5F5;
   --cor-5: #f3e882;
   --cor-6: #53D6CE;
-  --cor-7: #5f581d;
-  --cor-8: #1c5753;
+  --cor-7: #4e4919;
+  --cor-8: #15423f;
 }
 
 body {
@@ -84,6 +84,7 @@ ul {
   padding: .8rem 1.2rem;
   border-radius: .2rem;
   transition: .2s;
+  box-shadow: 0 0 30px 0 var(--cor-2);
 }
 
 .btn-amarelo:hover {
@@ -111,12 +112,11 @@ ul {
     text-align: center;
     font-size: 13px;
   }
-  
 }
 
 @media (max-width: 450px) {
   body {
     background-image: url('./assets/pattern.svg');
-    background-size: 9rem;
+    background-size: 8rem;
   }
 }

@@ -54,6 +54,7 @@
   font-weight: 300;
   margin-left: 2rem;
   font-family: 'Poppins', sans-serif;
+  font-size: 1em;
   letter-spacing: 0;
 }
 
@@ -69,7 +70,6 @@
   border-bottom-left-radius: .2rem;
   padding: .8rem;
   text-align: left;
-  font-size: 1rem;
 }
 
 .saboresLista li+li {
@@ -79,7 +79,7 @@
 .saboresLista li:nth-of-type(1) {
   margin-left: 2rem;
   background: var(--cor-3);
-  color: #340e66;
+  color: #26094d;
 }
 
 .saboresLista li:nth-of-type(2) {
@@ -98,6 +98,7 @@
 @media (max-width:800px) {
   .vemAi {
     grid-template-columns:auto;
+    justify-content: center;
     text-align: center;
     grid-gap: 0;
     padding: 3rem
@@ -108,7 +109,8 @@
   }
 
   .img img {
-    max-width: 350px;
+    max-width: 400px;
+    margin-top: -7rem;
   }
   
 .txt {
@@ -119,8 +121,12 @@
 .saboresLista {
  flex-direction: row;
  text-align: center;
+ margin-left:auto;
+ margin-right:auto;
 }
-
+.sabores h3 {
+  margin-left: 0
+}
 .saboresLista li {
   border-radius: .2rem;
   flex: 1;
@@ -129,10 +135,9 @@
 
 .saboresLista li+li {
   margin-top: 0;
-  margin-left: .5rem;
 }
 .saboresLista li:nth-of-type(1) {
-  margin-left: .5rem;
+  margin-left: 0;
 }
 
 .saboresLista li:nth-of-type(2) {
@@ -145,11 +150,8 @@
 }
 
 @media (max-width:550px) {
-  .sabores h3 {
-    margin-left: 0;
-  }
+
   .saboresLista li {
-    font-size: 13px;
     margin: 0 auto;
     padding: .5rem 2rem;
   }
@@ -180,6 +182,6 @@
     filter: blur(160px);
   }
   .vemAi {
-background-size: 15rem;
+  background-size: 15rem;
   }
 }
