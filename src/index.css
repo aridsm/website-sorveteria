@@ -1,38 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Poppins:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0
+  margin: 0;
 }
 
 :root {
   --cor-1: #511f92;
   --cor-2: #451280;
   --cor-3: #a379f1;
-  --cor-4: #F5F5F5;
+  --cor-4: #f5f5f5;
   --cor-5: #f3e882;
-  --cor-6: #53D6CE;
+  --cor-6: #53d6ce;
   --cor-7: #4e4919;
   --cor-8: #15423f;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: var(--cor-1);
   color: var(--cor-4);
   font-size: 15px;
   font-weight: 300;
-  background-image: url('./assets/pattern.svg'), url('./assets/enf.svg');
+  background-image: url("./assets/pattern.svg"), url("./assets/enf.svg");
   background-position: top right;
-  background-repeat:repeat, no-repeat;
+  background-repeat: repeat, no-repeat;
   background-size: 10rem, 20rem;
 }
 
-
 h1,
-h2, h3{
-  font-family: 'Fredoka';
+h2,
+h3 {
+  font-family: "Fredoka";
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -72,18 +72,18 @@ ul {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1050px;
   width: 100%;
   padding: 1rem;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .btn-amarelo {
   background: var(--cor-5);
   color: var(--cor-7);
-  padding: .8rem 1.2rem;
-  border-radius: .2rem;
-  transition: .2s;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.2rem;
+  transition: 0.2s;
   box-shadow: 2px 2px 2px 0 #411177;
 }
 
@@ -104,7 +104,7 @@ ul {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background:  var(--cor-4);
+  background: var(--cor-4);
 }
 
 @media (max-width: 550px) {
@@ -116,7 +116,7 @@ ul {
 
 @media (max-width: 450px) {
   body {
-    background-image: url('./assets/pattern.svg');
+    background-image: url("./assets/pattern.svg");
     background-size: 8rem;
   }
 }
