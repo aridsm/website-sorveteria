@@ -1,21 +1,22 @@
 .vemAi {
   background-color: var(--cor-2);
-  background-image: url('../../assets/vemaienf1.svg'), url('../../assets/vemaienf2.svg');
+  background-image: url("../../assets/vemaienf1.svg"),
+    url("../../assets/vemaienf2.svg");
   background-position: top right, bottom left;
   background-size: 20rem;
   background-repeat: no-repeat;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   margin: 2rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
   position: relative;
   align-items: center;
-  padding: 1rem
+  padding: 1rem;
 }
 
 .vemAi::before {
-  content: '';
+  content: "";
   background: var(--cor-3);
   position: absolute;
   left: calc(50% - 150px);
@@ -23,11 +24,11 @@
   height: 240px;
   display: block;
   z-index: -1;
-  filter: blur(150px)
+  filter: blur(150px);
 }
 
 .txt {
-  margin-left: 2rem
+  margin-left: 2rem;
 }
 
 .img {
@@ -43,17 +44,17 @@
 
 .titulo {
   font-size: 3rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .sabores {
-  margin-top: auto;
+  margin-top: 3rem;
 }
 
 .sabores h3 {
   font-weight: 300;
-  margin-left: 2rem;
-  font-family: 'Poppins', sans-serif;
+  margin-left: 3rem;
+  font-family: "Poppins", sans-serif;
   font-size: 1em;
   letter-spacing: 0;
 }
@@ -62,46 +63,45 @@
   display: flex;
   flex-direction: column;
   margin-right: -1rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .saboresLista li {
-  border-top-left-radius: .2rem;
-  border-bottom-left-radius: .2rem;
-  padding: .8rem;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  padding: 0.8rem;
   text-align: left;
 }
 
-.saboresLista li+li {
-  margin-top: .5rem;
+.saboresLista li + li {
+  margin-top: 0.5rem;
 }
 
 .saboresLista li:nth-of-type(1) {
-  margin-left: 2rem;
+  margin-left: 3rem;
   background: var(--cor-3);
   color: #26094d;
 }
 
 .saboresLista li:nth-of-type(2) {
-  margin-left: 3rem;
+  margin-left: 4rem;
   background: var(--cor-5);
   color: var(--cor-7);
 }
 
 .saboresLista li:nth-of-type(3) {
-  margin-left: 4rem;
+  margin-left: 5rem;
   background: var(--cor-6);
   color: var(--cor-8);
 }
 
-
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .vemAi {
-    grid-template-columns:auto;
+    grid-template-columns: auto;
     justify-content: center;
     text-align: center;
     grid-gap: 0;
-    padding: 3rem
+    padding: 3rem;
   }
   .img {
     grid-row: 1;
@@ -112,52 +112,54 @@
     max-width: 400px;
     margin-top: -7rem;
   }
-  
-.txt {
-  margin-left: 0;
-  margin-bottom: 2rem;
-}
 
-.saboresLista {
- flex-direction: row;
- text-align: center;
- margin-left:auto;
- margin-right:auto;
-}
-.sabores h3 {
-  margin-left: 0
-}
-.saboresLista li {
-  border-radius: .2rem;
-  flex: 1;
-  text-align: center;
-}
-
-.saboresLista li+li {
-  margin-top: 0;
-}
-.saboresLista li:nth-of-type(1) {
-  margin-left: 0;
-}
-
-.saboresLista li:nth-of-type(2) {
-  margin-left: .5rem;
-}
-
-.saboresLista li:nth-of-type(3) {
-  margin-left: .5rem;
-}
-}
-
-@media (max-width:550px) {
-
-  .saboresLista li {
-    margin: 0 auto;
-    padding: .5rem 2rem;
+  .txt {
+    margin-left: 0;
+    margin-bottom: 2rem;
   }
 
-  .saboresLista li+li {
-    margin-top: .5rem;
+  .saboresLista {
+    flex-direction: row;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sabores {
+    margin-top: 0;
+  }
+  .sabores h3 {
+    margin-left: 0;
+  }
+  .saboresLista li {
+    border-radius: 0.2rem;
+    flex: 1;
+    text-align: center;
+  }
+
+  .saboresLista li + li {
+    margin-top: 0;
+  }
+  .saboresLista li:nth-of-type(1) {
+    margin-left: 0;
+  }
+
+  .saboresLista li:nth-of-type(2) {
+    margin-left: 0.5rem;
+  }
+
+  .saboresLista li:nth-of-type(3) {
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .saboresLista li {
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+  }
+
+  .saboresLista li + li {
+    margin-top: 0.5rem;
     margin-left: 0;
   }
   .saboresLista {
@@ -168,11 +170,11 @@
   .saboresLista li:nth-of-type(1) {
     margin-left: auto;
   }
-  
+
   .saboresLista li:nth-of-type(2) {
     margin-left: auto;
   }
-  
+
   .saboresLista li:nth-of-type(3) {
     margin-left: auto;
   }
@@ -182,6 +184,6 @@
     filter: blur(160px);
   }
   .vemAi {
-  background-size: 15rem;
+    background-size: 15rem;
   }
 }
